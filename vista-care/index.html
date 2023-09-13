@@ -1,0 +1,2242 @@
+<!doctype html>
+<html lang="en" data-theme="luxury">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Care</title>
+    <link rel="stylesheet" href="./src/app.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="px-5">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
+            >
+              <li><a href="#discount">Our Discount</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#promotion">Promotion</a></li>
+            </ul>
+          </div>
+          <a class="link-primary hidden sm:block" href="/"
+            ><img src="src/img/header/logo.png" class="w-1h-16 h-16" alt="Logo"
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#discount">Our Discount</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#promotion">Promotion</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="btn btn-md text-left"
+            onclick="callback_modal.showModal()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z"
+              />
+            </svg>
+            Call a <br />measurer
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="hero min-h-screen bg-hero bg-left lg:bg-center">
+      <div class="hero-content w-full flex-col lg:flex-row-reverse lg:gap-64">
+        <form
+          class="form-freezer card w-full max-w-sm flex-shrink-0 bg-base-100 shadow-2xl"
+        >
+          <div class="card-body">
+            <h2 class="card-title justify-center text-sm">SIGN UP FOR A</h2>
+            <p class="text-center">FREE TRIAL TODAY</p>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered"
+                required
+                name="name"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="number"
+                placeholder="Enter your phone"
+                class="input input-bordered"
+                required
+                name="phone"
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                Call the freezer
+              </button>
+            </div>
+            <p class="mt-3 text-center text-sm text-neutral-400">
+              Your data is private
+            </p>
+          </div>
+        </form>
+        <div class="max-w-2xl text-center lg:text-left">
+          <h1 class="font-secondary text-5xl font-bold leading-tight">
+            GLAZING OF
+            <span class="text-secondary">BALCONIES</span>
+            TURNKEY
+          </h1>
+          <p class="text-md py-6 leading-snug text-neutral-focus">
+            Discover the elegance and comfort of Balcony Glazing. <br />Elevate
+            your space today with our Turnkey Solutions and enjoy year-round
+            bumblebee.
+          </p>
+          <div class="stats stats-vertical shadow lg:stats-horizontal md:mt-10">
+            <div class="stat">
+              <div class="stat-title">Service Hours</div>
+              <div class="stat-value">24/7</div>
+              <div class="stat-desc">Customer Support Available</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-title">Service Reach</div>
+              <div class="stat-value">25+</div>
+              <div class="stat-desc">Cities Covered</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-title">Awards</div>
+              <div class="stat-value">10+</div>
+              <div class="stat-desc">Awards Earned</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- BALCONIES -->
+    <section>
+      <div class="container mx-auto py-12 md:py-24">
+        <h3
+          class="border-spacing-2 px-5 text-center font-secondary text-3xl font-bold md:px-0"
+        >
+          GLAZING OF BALCONIES AND LOGGIAS
+        </h3>
+        <div class="divider mx-auto my-16 w-5/12"></div>
+        <div class="swiper h-auto w-4/5">
+          <div class="swiper-wrapper">
+            <li
+              data-tab-balconies="wooden"
+              class="swiper-slide card card-compact cursor-pointer border-2 border-accent-focus bg-base-100 shadow-xl transition-all ease-out hover:border-accent-focus hover:shadow-xl"
+            >
+              <figure class="pt-6">
+                <img src="/src/img/glazing/icons/1.png" alt="Wooden glazing" />
+              </figure>
+              <div class="card-body">
+                <h4 class="card-title justify-center text-sm">
+                  Wooden glazing
+                </h4>
+              </div>
+            </li>
+            <li
+              data-tab-balconies="aluminum"
+              class="swiper-slide card card-compact cursor-pointer border-2 bg-base-100 transition-all ease-out hover:border-2 hover:border-accent-focus hover:shadow-xl active:border-secondary"
+            >
+              <figure class="pt-6">
+                <img
+                  src="/src/img/glazing/icons/2.png"
+                  alt="Aluminum glazing"
+                />
+              </figure>
+              <div class="card-body">
+                <h4 class="card-title justify-center text-sm">
+                  Aluminum glazing
+                </h4>
+              </div>
+            </li>
+            <li
+              data-tab-balconies="plastic"
+              class="swiper-slide card card-compact cursor-pointer border-2 bg-base-100 transition-all ease-out hover:border-2 hover:border-accent-focus hover:shadow-xl active:border-secondary"
+            >
+              <figure class="pt-6">
+                <img src="/src/img/glazing/icons/3.png" alt="Plastic glazing" />
+              </figure>
+              <div class="card-body">
+                <h4 class="card-title justify-center text-sm">
+                  Plastic glazing
+                </h4>
+              </div>
+            </li>
+            <li
+              data-tab-balconies="french"
+              class="swiper-slide card card-compact cursor-pointer border-2 bg-base-100 transition-all ease-out hover:border-2 hover:border-accent-focus hover:shadow-xl active:border-secondary"
+            >
+              <figure class="pt-6">
+                <img src="/src/img/glazing/icons/4.png" alt="French glazing" />
+              </figure>
+              <div class="card-body">
+                <h4 class="card-title justify-center text-sm">
+                  French glazing
+                </h4>
+              </div>
+            </li>
+            <li
+              data-tab-balconies="extension"
+              class="swiper-slide card card-compact cursor-pointer border-2 bg-base-100 transition-all ease-out hover:border-2 hover:border-accent-focus hover:shadow-xl active:border-secondary"
+            >
+              <figure class="pt-6">
+                <img
+                  src="/src/img/glazing/icons/5.png"
+                  alt="Extension glazing"
+                />
+              </figure>
+              <div class="card-body">
+                <h4 class="card-title justify-center text-sm">
+                  Extension glazing
+                </h4>
+              </div>
+            </li>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <ul
+          class="mt-16 flex flex-wrap justify-between gap-10 px-5 md:px-20"
+          id="wooden"
+        >
+          <li
+            class="wooden-appear card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/img_cold.png"
+                alt="cold"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Cold</h2>
+              <ul class="space-y-2 self-start text-left">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+                  Structural thickness 42-58 mm
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: polished glass (4 - 5 mm thick)
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.07 m 2 * C / W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: 20-27 dB
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">2600 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+          <li
+            class="wooden-appear card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/img_warm.png"
+                alt="warm"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Warm</h2>
+              <ul class="space-y-2 self-start">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Structural profile thickness: 58-78 m
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: single and double glazing
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.63 - 1.05 m 2 * C/W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: up to class 5
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">4000 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul
+          class="mt-16 hidden flex-wrap justify-between gap-10 px-5 md:px-20"
+          id="aluminum"
+        >
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/aluminum/cold.jpg"
+                alt="cold"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Cold</h2>
+              <ul class="space-y-2 self-start text-left">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+                  Structural thickness 42-58 mm
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: polished glass (4 - 5 mm thick)
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.07 m 2 * C / W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: 20-27 dB
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">2600 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/aluminum/warm.jpg"
+                alt="warm"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Warm</h2>
+              <ul class="space-y-2 self-start">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Structural profile thickness: 58-78 m
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: single and double glazing
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.63 - 1.05 m 2 * C/W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: up to class 5
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">4000 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul
+          class="mt-16 hidden flex-wrap justify-center gap-10 px-5 md:px-20"
+          id="plastic"
+        >
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/plastic/warm.jpg"
+                alt="warm"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Warm</h2>
+              <ul class="space-y-2 self-start">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Structural profile thickness: 58-78 m
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: single and double glazing
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.63 - 1.05 m 2 * C/W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: up to class 5
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">4000 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul
+          class="mt-16 hidden flex-wrap justify-between gap-10 px-5 md:px-20"
+          id="french"
+        >
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/french/plastic.jpg"
+                alt="cold"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Plastic</h2>
+              <ul class="space-y-2 self-start text-left">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+                  Structural thickness 42-58 mm
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: polished glass (4 - 5 mm thick)
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.07 m 2 * C / W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: 20-27 dB
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">2600 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/french/aluminum.jpg"
+                alt="warm"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Aluminum</h2>
+              <ul class="space-y-2 self-start">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Structural profile thickness: 58-78 m
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: single and double glazing
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.63 - 1.05 m 2 * C/W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: up to class 5
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">4000 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul
+          class="mt-16 hidden flex-wrap justify-between gap-10 px-5 md:px-20"
+          id="extension"
+        >
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/rise/aluminum.jpg"
+                alt="cold"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Aluminum</h2>
+              <ul class="space-y-2 self-start text-left">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+                  Structural thickness 42-58 mm
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: polished glass (4 - 5 mm thick)
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.07 m 2 * C / W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: 20-27 dB
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">2600 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card max-w-[650px] flex-1 basis-[410px] bg-base-100 bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="/src/img/glazing/rise/tree.jpg"
+                alt="warm"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center space-y-4 text-center">
+              <h2 class="card-title uppercase">Wooden</h2>
+              <ul class="space-y-2 self-start">
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Structural profile thickness: 58-78 m
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Glazing: single and double glazing
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Thermal insulation: 0.63 - 1.05 m 2 * C/W
+                </li>
+                <li class="flex gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 rounded-lg border border-primary"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Sound insulation: up to class 5
+                </li>
+              </ul>
+              <div class="divider"></div>
+              <div
+                class="card-actions w-full justify-center sm:justify-between"
+              >
+                <div>
+                  <p class="text-md font-bold">4000 UAH.sq.m.</p>
+                  <span class="text-start text-xs text-neutral-500"
+                    >turnkey installation</span
+                  >
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="calculator_modal.showModal()"
+                >
+                  CALCULATE THE COST
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DISCOUNT SECTION -->
+    <section id="discount" class="bg-[#f7f7f7]">
+      <div class="container mx-auto py-12 md:py-24">
+        <h3
+          class="border-spacing-2 text-center font-secondary text-3xl font-bold"
+        >
+          ORDER A BALCONY FINISHING WITH A
+          <span class="font-primary font-bold">60%</span> DISCOUNT
+        </h3>
+        <div class="divider mx-auto my-4 w-5/12 md:my-16"></div>
+        <div class="tabs-boxed tabs justify-center bg-transparent">
+          <a data-tab-discount="interior" class="tab tab-active tab-lg"
+            >INTERIOR DECORATION</a
+          >
+          <a data-tab-discount="exterior" class="tab tab-lg">EXTERIOR FINISH</a>
+          <a data-tab-discount="remote" class="tab tab-lg">REMOTE GLAZING</a>
+          <a data-tab-discount="roof" class="tab tab-lg">ROOF TO BALCONY</a>
+        </div>
+        <div
+          class="grid-cols-auto mt-10 grid grid-flow-row-dense gap-10 lg:grid-cols-3"
+        >
+          <figure
+            class="h-[440px] w-[300px] justify-self-center lg:justify-self-end"
+            id="interior"
+          >
+            <img
+              src="/src/img/decoration/decoration_img.png"
+              alt="interior"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <figure
+            class="hidden h-[440px] w-[300px] justify-self-center lg:justify-self-end"
+            id="exterior"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="/src/img/decoration/2/decoration2_img.png"
+              alt="exterior"
+            />
+          </figure>
+          <figure
+            class="hidden h-[440px] w-[300px] justify-self-center lg:justify-self-end"
+            id="remote"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="/src/img/decoration/3/decoration3_img.jpg"
+              alt="remote"
+            />
+          </figure>
+          <figure
+            class="hidden h-[440px] w-[300px] justify-self-center lg:justify-self-end"
+            id="roof"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="/src/img/decoration/4/decoration4_img.png"
+              alt="roof"
+            />
+          </figure>
+          <ul
+            class="flex flex-wrap justify-center gap-10 pt-10 lg:justify-start"
+          >
+            <li class="flex basis-[120px] flex-col items-center gap-10">
+              <figure class="flex h-[70px] w-[70px] flex-col items-center">
+                <img
+                  src="/src/img/decoration/material/lining.png"
+                  alt="lining"
+                  class="h-full w-full object-cover align-top"
+                />
+                <figcaption class="font-bold">Clapboard</figcaption>
+              </figure>
+              <div class="text-center">
+                <p class="font-bold text-info">600 UAH sq.m.</p>
+                <span class="text-sm text-neutral-600">with material</span>
+              </div>
+            </li>
+            <li class="flex basis-[120px] flex-col items-center gap-10">
+              <figure class="flex h-[70px] w-[70px] flex-col items-center">
+                <img
+                  src="/src/img/decoration/material/plastic.png"
+                  alt="plastic"
+                  class="h-full w-full object-cover align-top"
+                />
+                <figcaption class="font-bold">Clapboard</figcaption>
+              </figure>
+              <div class="text-center">
+                <p class="font-bold text-info">750 UAH sq.m.</p>
+                <span class="text-sm text-neutral-600">with material</span>
+              </div>
+            </li>
+            <li class="flex basis-[120px] flex-col items-center gap-10">
+              <figure class="flex h-[70px] w-[70px] flex-col items-center">
+                <img
+                  src="/src/img/decoration/material/pvh.png"
+                  alt="pvh"
+                  class="h-full w-full object-cover align-top"
+                />
+                <figcaption class="font-bold">Clapboard</figcaption>
+              </figure>
+              <div class="text-center">
+                <p class="font-bold text-info">800 UAH sq.m.</p>
+                <span class="text-sm text-neutral-600">with material</span>
+              </div>
+            </li>
+            <li class="flex basis-[120px] flex-col items-center gap-10">
+              <figure class="flex h-[70px] w-[70px] flex-col items-center">
+                <img
+                  src="/src/img/decoration/material/laminate.png"
+                  alt="laminate"
+                  class="h-full w-full object-cover align-top"
+                />
+                <figcaption class="font-bold">Clapboard</figcaption>
+              </figure>
+              <div class="text-center">
+                <p class="font-bold text-info">1250 UAH sq.m.</p>
+                <span class="text-sm text-neutral-600">with material</span>
+              </div>
+            </li>
+            <li class="flex basis-[120px] flex-col items-center gap-10">
+              <figure class="flex h-[70px] w-[70px] flex-col items-center">
+                <img
+                  src="/src/img/decoration/material/tree.png"
+                  alt="tree"
+                  class="h-full w-full object-cover align-top"
+                />
+                <figcaption class="font-bold">Clapboard</figcaption>
+              </figure>
+              <div class="text-center">
+                <p class="font-bold text-info">1650 UAH sq.m.</p>
+                <span class="text-sm text-neutral-600">with material</span>
+              </div>
+            </li>
+          </ul>
+          <form
+            class="form-freezer card mt-10 max-h-96 w-full max-w-full flex-shrink-0 bg-base-100 shadow-2xl lg:max-w-sm"
+          >
+            <div class="card-body">
+              <h2 class="card-title justify-center text-sm">SIGN UP FOR A</h2>
+              <p class="text-center">FREE TRIAL TODAY</p>
+              <div class="form-control">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered"
+                  required
+                  name="name"
+                />
+              </div>
+              <div class="form-control">
+                <input
+                  type="number"
+                  placeholder="Enter your phone"
+                  class="input input-bordered"
+                  required
+                  name="phone"
+                />
+              </div>
+              <div class="form-control mt-6">
+                <button type="submit" aria-label="Call" class="btn btn-primary">
+                  Call the freezer
+                </button>
+              </div>
+              <p class="mt-3 text-center text-sm text-neutral-400">
+                Your data is private
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works">
+      <div class="container mx-auto py-12 md:py-24">
+        <h3
+          class="border-spacing-2 text-center font-secondary text-3xl font-bold"
+        >
+          OUR WORKS
+        </h3>
+        <div class="divider mx-auto my-4 w-5/12 md:my-16"></div>
+        <div
+          class="grid auto-rows-[270px] grid-rows-[270px] gap-3 px-5 md:grid-cols-2 lg:grid-cols-4"
+          id="works-grid"
+        >
+          <a
+            href="/src/img/our_works/big_img/1.png"
+            data-fslightbox="gallery"
+            class="cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/1.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/2.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/2.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/3.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/3.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/4.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/4.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/5.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/5.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/6.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/6.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/7.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/7.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+          <a
+            data-fslightbox="gallery"
+            href="/src/img/our_works/big_img/8.png"
+            class="w-full cursor-pointer overflow-hidden rounded"
+          >
+            <img
+              src="/src/img/our_works/big_img/8.png"
+              alt="image"
+              class="h-full w-full transition-transform ease-in hover:scale-110"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEE -->
+    <section class="guarantee bg-blue-600 text-base-100">
+      <div class="container mx-auto py-12 md:py-24">
+        <h3
+          class="border-spacing-2 text-center font-secondary text-3xl font-bold"
+        >
+          GUARANTEE
+        </h3>
+        <ul
+          class="mt-16 grid grid-cols-1 justify-center text-center sm:grid-cols-2 md:grid-cols-3 md:gap-24"
+        >
+          <li class="mx-auto">
+            <figure
+              class="flex transform flex-col items-center justify-center gap-5 rounded-lg border-2 border-transparent p-4 duration-500 ease-in-out hover:-translate-y-1 hover:border-2 hover:border-base-100 hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-14 w-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                />
+              </svg>
+
+              <figcaption class="text-xl">High quality</figcaption>
+            </figure>
+          </li>
+          <li class="mx-auto">
+            <figure
+              class="flex transform flex-col items-center justify-center gap-5 rounded-lg border-2 border-transparent p-4 duration-500 ease-in-out hover:-translate-y-1 hover:border-2 hover:border-base-100 hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-14 w-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                />
+              </svg>
+
+              <figcaption class="text-xl">
+                Execution of <br />turnkey works
+              </figcaption>
+            </figure>
+          </li>
+          <li class="mx-auto">
+            <figure
+              class="flex transform flex-col items-center justify-center gap-5 rounded-lg border-2 border-transparent p-4 duration-500 ease-in-out hover:-translate-y-1 hover:border-2 hover:border-base-100 hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-14 w-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
+              <figcaption class="text-xl">
+                Installation in <br />a short time
+              </figcaption>
+            </figure>
+          </li>
+          <li class="mx-auto">
+            <figure
+              class="flex transform flex-col items-center justify-center gap-5 rounded-lg border-2 border-transparent p-4 duration-500 ease-in-out hover:-translate-y-1 hover:border-2 hover:border-base-100 hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-14 w-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
+              <figcaption class="text-xl">
+                Prices from <br />the manufacturer
+              </figcaption>
+            </figure>
+          </li>
+          <li class="mx-auto">
+            <figure
+              class="flex transform flex-col items-center justify-center gap-5 rounded-lg border-2 border-transparent p-4 duration-500 ease-in-out hover:-translate-y-1 hover:border-2 hover:border-base-100 hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-14 w-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
+                />
+              </svg>
+
+              <figcaption class="text-xl">
+                FREE TRIAL today <br />and consultation
+              </figcaption>
+            </figure>
+          </li>
+          <li class="mx-auto">
+            <figure
+              class="flex transform flex-col items-center justify-center gap-5 rounded-lg border-2 border-transparent p-4 duration-500 ease-in-out hover:-translate-y-1 hover:border-2 hover:border-base-100 hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-14 w-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+
+              <figcaption class="text-xl">
+                Warmth and comfort <br />on the balcony
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+      <div class="container mx-auto py-12 md:py-24">
+        <h3
+          class="border-spacing-2 text-center font-secondary text-3xl font-bold"
+        >
+          You can pay for our services:
+        </h3>
+        <div class="divider mx-auto my-4 w-5/12 md:my-16"></div>
+
+        <ul class="flex flex-wrap justify-around gap-20" id="services-items">
+          <li class="flex items-center gap-5">
+            <div
+              class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-blue-700 p-2 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-12 w-12 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                />
+              </svg>
+            </div>
+            <p class="text-xl">Cash</p>
+          </li>
+          <li class="flex items-center gap-5">
+            <div
+              class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-blue-700 p-2 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-12 w-12 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                />
+              </svg>
+            </div>
+
+            <p class="text-xl">Bank card</p>
+          </li>
+          <li class="flex items-center gap-5">
+            <div
+              class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-blue-700 p-2 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-12 w-12 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"
+                />
+              </svg>
+            </div>
+
+            <p class="text-xl">Cashless payments</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROMOTION -->
+    <section
+      id="promotion"
+      class="hero min-h-[80vh] bg-promotion bg-right md:bg-[30%_center]"
+    >
+      <div
+        class="hero-content w-full flex-col py-20 lg:flex-row-reverse lg:gap-64"
+      >
+        <form
+          class="form-freezer card w-full max-w-sm flex-shrink-0 bg-base-100 shadow-2xl"
+        >
+          <div class="card-body">
+            <h2 class="card-title justify-center text-sm">SIGN UP FOR A</h2>
+            <p class="text-center">FREE TRIAL TODAY</p>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered"
+                required
+                name="name"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="number"
+                placeholder="Enter your phone"
+                class="input input-bordered"
+                required
+                name="phone"
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                Call the freezer
+              </button>
+            </div>
+            <p class="mt-3 text-center text-sm text-neutral-400">
+              Your data is private
+            </p>
+          </div>
+        </form>
+        <div class="max-w-2xl text-center lg:text-left">
+          <h1 class="font-secondary text-5xl font-bold leading-tight">
+            PROMOTION -
+            <span class="font-primary md:text-secondary">60%</span>
+          </h1>
+          <p
+            class="mt-10 py-6 font-secondary text-lg font-bold leading-snug text-neutral-focus md:mt-20"
+          >
+            Save money on glazing! Until
+            <span id="deadline">December 18th</span>
+          </p>
+          <div
+            class="grid auto-cols-max grid-flow-col justify-center gap-5 text-center md:justify-start"
+            id="timer"
+          >
+            <div
+              class="rounded-box flex flex-col bg-neutral p-2 text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 15" id="days"></span>
+              </span>
+              days
+            </div>
+            <div
+              class="rounded-box flex flex-col bg-neutral p-2 text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 10" id="hours"></span>
+              </span>
+              hours
+            </div>
+            <div
+              class="rounded-box flex flex-col bg-neutral p-2 text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 24" id="min"></span>
+              </span>
+              min
+            </div>
+            <div
+              class="rounded-box flex flex-col bg-neutral p-2 text-neutral-content"
+            >
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 50" id="sec"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND -->
+    <section>
+      <div class="container mx-auto py-12 md:py-24">
+        <h3
+          class="border-spacing-2 text-center font-secondary text-3xl font-bold"
+        >
+          HOW TO FIND US
+        </h3>
+        <div class="divider mx-auto my-4 w-5/12 md:my-16"></div>
+        <div class="grid grid-cols-1 gap-10 px-2 md:grid-cols-2 md:px-10">
+          <div>
+            <iframe
+              width="100%"
+              height="400"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA,%2018,%20%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2,%20%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,%2061000+(Window)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.maps.ie/population/"
+                >Population calculator map</a
+              ></iframe
+            >
+          </div>
+          <ul class="space-y-6">
+            <li class="space-y-3">
+              <p class="font-bold text-secondary-focus">Legal address:</p>
+              <address class="not-italic">
+                VistaCare, Donets'kyi Ln, 18, Kharkiv, Kharkivs'ka oblast, 61010
+              </address>
+            </li>
+            <li class="space-y-3">
+              <p class="font-bold text-secondary-focus">Actual address:</p>
+              <address class="not-italic">
+                VistaCare, Donets'kyi Ln, 18, Kharkiv, Kharkivs'ka oblast, 61010
+              </address>
+            </li>
+            <li class="space-y-3">
+              <p class="font-bold text-secondary-focus">Telephone:</p>
+              <a href="tel:+34956466171">+7 (495) 646-61- 71 (multichannel)</a>
+            </li>
+            <li class="space-y-3">
+              <p class="font-bold text-secondary-focus">Email:</p>
+              <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </li>
+            <li class="space-y-3">
+              <p class="font-bold text-secondary-focus">Working mode:</p>
+              <span>9:00 - 18:00 seven days a week</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="bg-blue-600 py-16 text-base-100">
+      <div
+        class="flex flex-col flex-wrap items-center justify-center gap-10 sm:flex-row"
+      >
+        <h5 class="text-lg sm:text-2xl">Do you have any questions?</h5>
+        <button
+          class="link text-lg hover:text-base-300 sm:text-2xl"
+          onclick="callback_modal.showModal()"
+        >
+          Ask our specialist!
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="footer footer-center rounded bg-base-200 p-10 text-base-content"
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link-hover link" href="#discount">Our Discount</a>
+        <a class="link-hover link" href="#works">Works</a>
+        <a class="link-hover link" href="#promotion">Promotion</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#" class="transition-all ease-out hover:text-secondary-focus"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a class="transition-all ease-out hover:text-secondary-focus" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg
+          ></a>
+          <a class="transition-all ease-out hover:text-secondary-focus" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg
+          ></a>
+        </div>
+      </nav>
+      <aside>
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- MEASURER -->
+    <dialog id="measurer_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box relative p-0">
+        <form method="dialog" class="absolute right-5 top-0 z-10">
+          <button
+            class="btn btn-circle btn-ghost btn-md absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <form
+          class="form-freezer card w-full flex-shrink-0 bg-base-100 shadow-2xl"
+        >
+          <div class="card-body">
+            <h2 class="card-title justify-center text-sm">SIGN UP FOR A</h2>
+            <p class="text-center">FREE TRIAL TODAY</p>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered"
+                required
+                name="name"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="number"
+                placeholder="Enter your phone"
+                class="input input-bordered"
+                required
+                name="phone"
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                Call the freezer
+              </button>
+            </div>
+            <p class="mt-3 text-center text-sm text-neutral-400">
+              Your data is private
+            </p>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- CALLBACK -->
+    <dialog id="callback_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box relative p-0">
+        <form method="dialog" class="absolute right-5 top-0 z-10">
+          <button
+            class="btn btn-circle btn-ghost btn-md absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <form
+          class="form-callback card w-full flex-shrink-0 bg-base-100 shadow-2xl"
+        >
+          <div class="card-body">
+            <h2 class="card-title justify-center">Enter your details</h2>
+            <p class="text-center font-bold">and click order a call</p>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered"
+                required
+                name="name"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="number"
+                placeholder="Enter your phone"
+                class="input input-bordered"
+                required
+                name="phone"
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                Request a call
+              </button>
+            </div>
+            <p class="mt-3 text-center text-sm text-neutral-400">
+              We'll call you back within 10 minutes
+            </p>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- CALCULATOR -->
+    <dialog id="calculator_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box relative p-0">
+        <form method="dialog" class="absolute right-5 top-0 z-10">
+          <button
+            class="btn btn-circle btn-ghost btn-md absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <form
+          class="card w-full flex-shrink-0 bg-base-100 shadow-2xl"
+          id="form-calculator"
+        >
+          <div class="card-body">
+            <h2 class="card-title justify-center">Calculator</h2>
+            <p class="text-center font-bold">
+              Choose the shape of the balcony and specify dimensions:
+            </p>
+
+            <ul class="flex items-center gap-4">
+              <li
+                class="flex-1 transition-transform ease-in-out"
+                data-tab-calculator="balcony-1"
+              >
+                <div class="cursor-pointer transition-all ease-out">
+                  <img
+                    src="/src/img/modal_calc/balkon/ba_01.png"
+                    alt="balcony-1"
+                  />
+                </div>
+              </li>
+              <li
+                class="flex-1 transition-transform ease-in-out"
+                data-tab-calculator="balcony-2"
+              >
+                <div class="cursor-pointer transition-all ease-out">
+                  <img
+                    src="/src/img/modal_calc/balkon/ba_02.png"
+                    alt="balcony-2"
+                  />
+                </div>
+              </li>
+              <li
+                class="flex-1 transition-transform ease-in-out"
+                data-tab-calculator="balcony-3"
+              >
+                <div class="cursor-pointer transition-all ease-out">
+                  <img
+                    src="/src/img/modal_calc/balkon/ba_03.png"
+                    alt="balcony-3"
+                  />
+                </div>
+              </li>
+              <li
+                class="flex-1 transition-transform ease-in-out"
+                data-tab-calculator="balcony-4"
+              >
+                <div class="cursor-pointer transition-all ease-out">
+                  <img
+                    src="/src/img/modal_calc/balkon/ba_04.png"
+                    alt="balcony-4"
+                  />
+                </div>
+              </li>
+            </ul>
+
+            <div id="balcony-1">
+              <img src="/src/img/modal_calc/balkon/type1.png" alt="type-1" />
+            </div>
+            <div id="balcony-2" class="hidden">
+              <img src="/src/img/modal_calc/balkon/type2.png" alt="type-2" />
+            </div>
+            <div id="balcony-3" class="hidden">
+              <img src="/src/img/modal_calc/balkon/type3.png" alt="type-3" />
+            </div>
+            <div id="balcony-4" class="hidden">
+              <img src="/src/img/modal_calc/balkon/type4.png" alt="type-4" />
+            </div>
+
+            <div class="join">
+              <div
+                class="join-item relative mb-4 flex w-full flex-wrap items-stretch"
+              >
+                <input
+                  type="number"
+                  required
+                  class="border-grey-light input input-bordered relative h-10 w-px flex-shrink flex-grow rounded rounded-r-none border px-3 leading-normal"
+                  placeholder="Width"
+                />
+                <div class="-mr-px flex">
+                  <span
+                    class="bg-grey-lighter border-grey-light whitespace-no-wrap text-grey-dark flex items-center rounded rounded-l-none border border-l-0 px-3 text-sm leading-normal"
+                    >mm</span
+                  >
+                </div>
+              </div>
+              <div
+                class="join-item relative mb-4 flex w-full flex-wrap items-stretch"
+              >
+                <input
+                  type="number"
+                  required
+                  class="border-grey-light input input-bordered relative h-10 w-px flex-shrink flex-grow rounded rounded-r-none border px-3 leading-normal"
+                  placeholder="Height"
+                />
+                <div class="-mr-px flex">
+                  <span
+                    class="bg-grey-lighter border-grey-light whitespace-no-wrap text-grey-dark flex items-center rounded rounded-l-none border border-l-0 px-3 text-sm leading-normal"
+                    >mm</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                Next
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- TYPE -->
+    <dialog id="type_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box relative p-0">
+        <form method="dialog" class="absolute right-5 top-0 z-10">
+          <button
+            class="btn btn-circle btn-ghost btn-md absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <form
+          class="card w-full flex-shrink-0 bg-base-100 shadow-2xl"
+          id="form-type"
+        >
+          <div class="card-body">
+            <h2 class="card-title justify-center">Calculator</h2>
+            <p class="text-center font-bold">
+              Choose the type of glazing and his profile:
+            </p>
+
+            <select class="select select-bordered w-full">
+              <option selected>Wooden glazing</option>
+              <option>Aluminum glazing</option>
+              <option>Plastic frames</option>
+              <option>Panoramic glazing</option>
+              <option>Glazing with extension</option>
+            </select>
+
+            <figure class="flex flex-col items-center justify-center gap-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-12 w-12 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                />
+              </svg>
+              <div class="form-control">
+                <label class="label cursor-pointer space-x-5">
+                  <span class="label-text text-lg">Cold</span>
+                  <input
+                    type="radio"
+                    name="radio-1"
+                    class="radio checked:bg-blue-500"
+                    checked
+                  />
+                </label>
+              </div>
+            </figure>
+            <figure class="flex flex-col items-center justify-center gap-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-12 w-12 text-primary-focus"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
+              <div class="form-control">
+                <label class="label cursor-pointer space-x-5">
+                  <span class="label-text text-lg">Warm</span>
+                  <input
+                    type="radio"
+                    name="radio-1"
+                    class="radio-secondary radio"
+                  />
+                </label>
+              </div>
+            </figure>
+
+            <div class="form-control">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                Next
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- SUM -->
+    <dialog id="sum_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box relative p-0">
+        <form method="dialog" class="absolute right-5 top-0 z-10">
+          <button
+            class="btn btn-circle btn-ghost btn-md absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <form class="form-sum card w-full flex-shrink-0 bg-base-100 shadow-2xl">
+          <div class="card-body">
+            <h2 class="card-title justify-center">
+              Thank you for your feedback!
+            </h2>
+            <p class="text-center font-bold">Leave your details</p>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered"
+                required
+                name="name"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="number"
+                placeholder="Enter your phone"
+                class="input input-bordered"
+                required
+                name="phone"
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button type="submit" aria-label="Call" class="btn btn-primary">
+                cALCULATE THE COST
+              </button>
+            </div>
+            <p class="mt-3 text-center text-sm text-neutral-400">
+              We'll call you back within 10 minutes
+            </p>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- TOAST -->
+    <div class="toast toast-center z-50 hidden" id="toast">
+      <div class="alert alert-success">
+        <span class="toast-content">Message sent successfully.</span>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
