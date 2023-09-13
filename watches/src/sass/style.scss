@@ -1,0 +1,48 @@
+@import 'libs/_libs';
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import 'base/_variables';
+@import 'base/_mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+section,
+.overflow {
+  z-index: 2;
+  background-color: #fff;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1190px;
+  max-width: 90%;
+}
+
+@import './blocks/_titles';
+@import './blocks/_btns';
+@import './blocks/_promo';
+@import './blocks/_header';
+@import './blocks/_works';
+@import './blocks/_loves';
+@import './blocks/_looks';
+@import './blocks/_scrollBar';
+@import './blocks/_questions';
+@import './blocks/_future';
+@import './blocks/_overflow';
+@import './blocks/_plans';
+@import './blocks/_posts';
+@import './blocks/_footer';
+@import './blocks/_custom-select';
+@import './blocks/_menu';
+@import './blocks/_modal';
+@import './blocks/_intro';
+@import './_media';

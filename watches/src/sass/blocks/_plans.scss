@@ -1,0 +1,110 @@
+.plans {
+  min-height: 943px;
+  padding: 185px 0 20px 0;
+  position: relative;
+  z-index: 1;
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__cards {
+    margin-top: 46px;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 310px);
+    grid-template-rows: repeat(auto-fill, minmax(570px, auto));
+    grid-auto-rows: minmax(570px, auto);
+    gap: 25px;
+  }
+  &__card {
+    box-shadow: 0px 15px 35px 0px rgba(51,78,104,0.1);
+    border-radius: 10px;
+    padding: 43px 46px 45px 46px;
+    background-color: $optional-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    &_active {
+      background-color: $main-color;
+      .plans__top {
+        border-bottom: 2px solid #0967d2;
+        .plans__price, .plans__descr, span {
+          color: $optional-color;
+        }
+      }
+      .plans__bottom {
+        li {
+          color: $optional-color;
+        }
+      }
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e6f6ff;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+    padding: 0 19px;
+    color: $main-color;
+    height: 25px;
+    background-color: #e6f6ff;
+    box-shadow: 0px 0px 75px 0px rgba(51,51,51,0.1);
+    border-radius: 12.5px;
+  }
+  &__price {
+    font-size: 48px;
+    font-weight: 900;
+    color: $main-color;
+    margin-top: 36px;
+    & + span {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: $text-color;
+    }
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    margin-top: 33px;
+  }
+  &__bottom {
+    padding: 41px 0 36px 0;
+    display: flex;
+    gap: 10px;
+  }
+  &__left, &__right {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__left {
+    align-items: flex-end;
+    li {
+      font-size: 16px;
+      font-weight: 700;
+      color: $title-color;
+    }
+  }
+  &__right {
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-color;
+  }
+}

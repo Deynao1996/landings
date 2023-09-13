@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 74px;
+  padding: 12px 100px 12px 100px;
+  flex-wrap: wrap;
+  z-index: 999;
+  transition: 0.3s transform, filter, background ease-in-out;
+  &__nav {
+    display: none;
+  }
+  &__links {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    li {
+      width: max-content;
+    }
+    a {
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: $optional-color;
+      text-decoration: none;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $optional-color;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    }
+  }
+  &__logo {
+    width: 54px;
+    height: 54px;
+    background-color: $optional-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    i {
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: $main-color;
+    }
+  }
+  &__auth {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+  &__login {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $optional-color;
+    text-decoration: none;
+  }
+  &__btn {
+    &:hover {
+      color: $main-color;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+.scroll-down {
+  header {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.scroll-up {
+  header {
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+    background: rgba(33, 134, 225, 0.4);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+  }
+}
+
+body:has(.scroll-up) h1 {
+  color: $main-color;
+}

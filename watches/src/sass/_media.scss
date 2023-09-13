@@ -1,0 +1,70 @@
+@media (max-width: 1200px) {
+  .future__phone {
+    img {
+      filter: blur(3.7px) opacity(0.5);
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .loves__arrows {
+    bottom: 5%;
+    right: 4%;
+  }
+}
+
+@media (max-width: 855px) {
+  .header {
+    padding: 12px 20px 12px 20px;
+    &__links,
+    &__auth {
+      display: none;
+    }
+    &__nav {
+      display: flex;
+      color: $optional-color;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .intro__up {
+    gap: 50px;
+    p {
+      letter-spacing: 5px;
+    }
+  }
+  .promo {
+    &__logo {
+      width: 100%;
+      transform: scale(0.8);
+      margin-top: 0;
+    }
+  }
+  .promo {
+    padding: 8px 0 40px 0;
+    &__title {
+      font-size: 43px;
+    }
+  }
+  .subtitle {
+    max-width: max-content;
+  }
+  .loves,
+  .plans,
+  .questions,
+  .posts {
+    padding-top: 80px;
+  }
+  .questions {
+    &__logo {
+      display: none;
+    }
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

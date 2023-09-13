@@ -1,0 +1,20 @@
+.looks {
+  min-height: 915px;
+  padding-top: 115px;
+  &__splide {
+    margin-top: 100px;
+  }
+  &__slide {
+    height: 100%;
+    width: 327px;
+    transition: 0.3s all;
+    filter: drop-shadow(0px 18px 6px #334e6840) opacity(0.4) blur(2px);
+    &.is-active {
+      filter: none;
+    }
+    img {
+      width: 327px;
+      height: 100%;
+    }
+  }
+}

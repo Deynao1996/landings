@@ -1,0 +1,113 @@
+.promo {
+  min-height: 1530px;
+  padding: 8px 0 15px 0;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: 2;
+  background-color: #fff;
+  &__logo {
+    margin: 0 auto;
+    margin-top: 61px;
+    width: 387px;
+    height: 653px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 14px 9px #243b53);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__items {
+    margin: 0 auto;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    grid-template-rows: minmax(318px, auto);
+    grid-auto-rows: minmax(318px, auto);
+    justify-content: center;
+    gap: 50px;
+    &:hover {
+      .promo__item:not(:hover) {
+        filter: blur(2px);
+      }
+    }
+  }
+  &__item {
+    background-color: $optional-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 94px 40px 47px 45px;
+    gap: 20px;
+    transition: 0.3s all;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: attr(data-count);
+      top: 0;
+      left: 10%;
+      position: absolute;
+      font-size: 205px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #d9e2ec;
+      opacity: 0.8;
+      z-index: -1;
+    }
+    &:hover {
+      filter: drop-shadow(4px 5px 16px #334e68);
+    }
+  }
+  &__icon {
+    color: $main-color;
+    font-size: 2rem;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: $main-color;
+    span {
+      color: $title-color;
+    }
+  }
+  &__descr {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #627d98;
+  }
+  &__corner {
+    width: 1920px;
+    height: 1920px;
+    background-image: linear-gradient(
+      -30deg,
+      rgb(58, 231, 225) 15%,
+      $main-color 84%
+    );
+    border-radius: 200px;
+    position: absolute;
+    top: -81%;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    z-index: -1;
+    color: rgba(174, 0, 0, 0.9);
+  }
+  &__title {
+    font-size: 66px;
+    line-height: 1.2;
+    margin-top: 114px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    span {
+      color: $optional-color;
+    }
+  }
+}
