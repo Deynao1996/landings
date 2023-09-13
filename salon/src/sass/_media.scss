@@ -1,0 +1,405 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .salon {
+    .title {
+      font-size: 33px;
+    }
+    &__titles {
+      width: 300px;
+    }
+    &__img {
+      width: 350px;
+    }
+    &__descr {
+      width: 272px;
+    }
+  }
+
+  .why {
+    &__content {
+      width: 365px;
+    }
+    &__items {
+      margin-top: 20px;
+    }
+  }
+
+  .choice {
+    background-position: 200%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+
+  .promo {
+    &__item {
+      min-height: 500px;
+    }
+  }
+
+  .salon {
+    &__img {
+      display: none;
+    }
+    &__descr {
+      width: 340px;
+    }
+  }
+
+  .services {
+    padding-top: 0;
+  }
+
+  .experts {
+    &__content {
+      align-items: center;
+      h2,
+      h3 {
+        text-align: center;
+      }
+      &-wrapper {
+        display: none;
+      }
+    }
+  }
+
+  .work {
+    min-height: 900px;
+  }
+
+  .why {
+    &__logo {
+      width: 397px;
+    }
+    &__content {
+      width: 270px;
+      .title {
+        font-size: 28px;
+      }
+      .subtitle {
+        font-size: 15px;
+      }
+    }
+    &__item {
+      font-size: 14px;
+    }
+  }
+
+  .experts {
+    padding-bottom: 40px;
+    &__bg {
+      display: none;
+    }
+    &__items {
+      margin-top: 20px;
+      position: relative;
+      transform: none;
+      left: 0;
+      top: 0;
+      grid-template-columns: repeat(2, 253px);
+      grid-template-rows: repeat(2, 345px);
+      justify-content: center;
+    }
+  }
+
+  .news {
+    padding-top: 50px;
+  }
+
+  .choice {
+    background: #f6f9f9;
+  }
+
+  .footer {
+    min-height: 320px;
+    span {
+      font-size: 13px;
+    }
+    &__socials {
+      width: 86%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .header {
+    padding: 0 1rem 0 1rem;
+    & > .container {
+      width: auto;
+    }
+    height: 60px;
+    &__menu {
+      min-height: 60px;
+    }
+    &__list {
+      display: none;
+    }
+    &__ham {
+      display: flex;
+    }
+  }
+
+  .promo {
+    .title {
+      font-size: 34px;
+    }
+    &__content {
+      max-width: 340px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+  }
+
+  .salon {
+    min-height: 520px;
+    &__titles {
+      width: auto;
+      & > span {
+        top: 0%;
+        -webkit-transform: translateY(-0%);
+        -ms-transform: translateY(-0%);
+        transform: translateY(-0%);
+      }
+    }
+    &__subtitle {
+      font-size: 15px;
+      text-align: center;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__descr {
+      width: 555px;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .why {
+    &__logo {
+      width: 296px;
+    }
+    &__content {
+      width: 229px;
+    }
+  }
+
+  .work {
+    &__items {
+      grid-template: repeat(2, 170px) / repeat(4, minmax(auto, 255px));
+      grid-auto-rows: 170px;
+      grid-template-areas:
+        'lips hair hair black-girl'
+        'pink-girl hair hair purple-girl';
+    }
+  }
+
+  .news {
+    margin-bottom: 0;
+    &__items {
+      justify-content: center;
+    }
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer {
+    padding-top: 16px;
+    min-height: 220px;
+    &__socials {
+      width: 87%;
+      a {
+        border: none;
+      }
+    }
+    &__about-logo {
+      height: 34px;
+    }
+    span {
+      font-size: 11px;
+    }
+    &__contact {
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .container {
+    width: 90%;
+  }
+
+  .header__aside {
+    width: 100%;
+    &-list {
+      li {
+        height: 45px;
+        a {
+          line-height: 45px;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: left;
+  }
+  .subtitle {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .promo {
+    &__content {
+      min-width: 100%;
+    }
+    &__item {
+      height: 100%;
+      &:is(.slide_0, .slide_1, .slide_2) {
+        background-color: rgb(173, 172, 172);
+        background-blend-mode: multiply;
+        color: white;
+      }
+      &.slide_0 {
+        background-position: 62%;
+      }
+      &.slide_2 {
+        background-position: 62%;
+      }
+      &.slide_1 {
+        background-position: 79%;
+      }
+    }
+  }
+
+  .salon {
+    &__descr {
+      width: auto;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__titles {
+      & > span {
+        display: none;
+      }
+    }
+    &__subtitle {
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+
+  .services {
+    padding-top: 50px;
+    &__items {
+      justify-content: center;
+    }
+  }
+
+  .why {
+    padding: 0 0 20px 0;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__logo {
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        box-shadow: none;
+      }
+    }
+    &__content {
+      width: auto;
+    }
+  }
+
+  .work {
+    padding: 40px 0 40px 0;
+    &__items {
+      grid-template: repeat(5, 255px) / 255px;
+      grid-template-areas:
+        'lips'
+        'hair'
+        'black-girl'
+        'pink-girl'
+        'purple-girl';
+      grid-auto-rows: 255px;
+    }
+  }
+
+  .experts {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    &__content {
+      align-items: flex-start;
+      .title,
+      .subtitle {
+        width: auto;
+        text-align: left;
+      }
+    }
+    &__items {
+      grid-template-columns: repeat(1, 253px);
+      grid-template-rows: repeat(4, 345px);
+    }
+  }
+
+  .news {
+    padding: 0 0 10px 0;
+    hr {
+      margin-top: 50px;
+    }
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .choice {
+    display: none;
+  }
+
+  .footer {
+    background-color: #f6f9f9;
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__about {
+      width: 255px;
+    }
+    &__socials {
+      width: 94%;
+      margin-bottom: 10px;
+      a {
+        background-color: $main-color;
+      }
+    }
+  }
+
+  .scrollTop {
+    bottom: 25px;
+  }
+}

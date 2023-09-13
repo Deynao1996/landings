@@ -1,0 +1,83 @@
+.footer {
+  min-height: 380px;
+  padding-top: 80px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__about {
+    width: 350px;
+    &-logo {
+      width: 112px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+    }
+    span {
+      display: block;
+      line-height: 1.7;
+      color: #6e6e6e;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+  &__open {
+    width: 255px;
+    &-title {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      color: #252525;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    span {
+      display: block;
+      line-height: 1.7;
+      color: #6e6e6e;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  &__contact {
+    width: 255px;
+    &-title {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      color: #252525;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    a, span {
+      text-decoration: none;
+      display: block;
+      line-height: 1.7;
+      color: #6e6e6e;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  &__socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+    border: 1px solid black;
+    &:hover {
+      background-color: $main-color;
+      border: none;
+    }
+  }
+}

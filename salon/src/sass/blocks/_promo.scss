@@ -1,0 +1,46 @@
+.promo {
+  &__item {
+    height: 100vh;
+    height: 100svh;
+    &.slide_0 {
+      background: url('../img/bg/header_bg_0.jpg') center center / cover
+        no-repeat;
+      color: #252525;
+    }
+    &.slide_1 {
+      background: url('../img/bg/header_bg_1.jpg') center center / cover
+        no-repeat;
+      color: #252525;
+    }
+    &.slide_2 {
+      background: url('../img/bg/header_bg_2.jpg') center center / cover
+        no-repeat;
+      color: white;
+    }
+  }
+  &__title {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 80px;
+    color: inherit !important;
+  }
+  &__content {
+    height: 100vh;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+  }
+  &__descr {
+    margin: 30px 0 50px 0;
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 1.8rem;
+    opacity: 0;
+  }
+  &__btn {
+    transition: none !important;
+  }
+}

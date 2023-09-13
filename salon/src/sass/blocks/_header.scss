@@ -1,0 +1,64 @@
+.header {
+  z-index: 10;
+  position: relative;
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100px;
+  }
+  &__logo {
+    display: block;
+    max-width: 112px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    &-item {
+      &:first-child {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background-color: $main-color;
+        }
+      }
+      &:nth-child(2) {
+        position: relative;
+        &:after {
+          content: '>';
+          position: absolute;
+          transform: rotate(90deg);
+          top: 10%;
+          left: 110%;
+          color: $main-color;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #252525;
+        transition: 0.3s all;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}

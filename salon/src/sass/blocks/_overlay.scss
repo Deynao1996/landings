@@ -1,0 +1,54 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .56);
+    z-index: 20;
+    &__item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 600px;
+      max-height: 100vh;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__left, &__right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      cursor: pointer;
+      font-size: 50px;
+      font-weight: bold;
+      transition: .3s all;
+      &:hover {
+        color: #bca858;
+      }
+    }
+    &__right {
+      right: 5%;
+    }
+    &__left {
+      left: 5%;
+    }
+    &__cross {
+      position: absolute;
+      top: 0;
+      right: 3%;
+      cursor: pointer;
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
+      transition: .3s all;
+      &:hover {
+        color: #bca858;
+      }
+    }
+}

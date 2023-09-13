@@ -1,0 +1,38 @@
+.has-down {
+  position: relative;
+  z-index: 10;
+  &:hover {
+    ul {
+      opacity: 1;
+      visibility: visible;
+      top: 120%;
+    }
+  }
+}
+
+.dropdown {
+  background-color: #ffffff;
+  z-index: 100;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  width: 210px;
+  border-radius: 6px;
+  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, .15);
+  opacity: 0;
+  visibility: hidden;
+  top: 140%;
+  transition: .3s all;
+  li {
+    a {
+      display: block;
+      font-size: 14px;
+      text-transform: capitalize;
+      height: 42px;
+      line-height: 42px;
+      padding: 0 30px;
+      color: #252525;
+      border-bottom: 1px solid rgba(242, 244, 248, 0.7);
+    }
+  }
+}

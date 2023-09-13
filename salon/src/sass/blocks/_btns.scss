@@ -1,0 +1,53 @@
+.btn {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 1;
+  min-width: 150px;
+  height: 42px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 35px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #252525;
+  border: 1px solid #252525;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: 0.5s all;
+  &_wtd {
+    a {
+      text-decoration: none;
+      color: #252525;
+    }
+  }
+  &_center {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  &:hover {
+    border-color: #bca858;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: $main-color;
+    color: #ffffff;
+    -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    a {
+      color: #ffffff;
+    }
+  }
+  &_main {
+    background-color: $main-color;
+    color: #ffffff;
+    border: none;
+    &:hover {
+      border-color: #252525;
+      background-color: #252525;
+      color: #ffffff;
+    }
+  }
+}
