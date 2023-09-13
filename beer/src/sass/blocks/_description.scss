@@ -1,0 +1,15 @@
+.description {
+  font-family: Roboto;
+  font-size: 20.9px;
+  line-height: 20px;
+  font-weight: 300;
+  color: var(--main-color);
+  text-align: justify;
+  p {
+    margin: 23px 0;
+  }
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+}

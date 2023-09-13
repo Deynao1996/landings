@@ -1,0 +1,67 @@
+// @import 'libs/pace-theme-default.min';
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@300&display=swap');
+@import 'base/_variables';
+@import 'base/_mixins';
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  cursor: none;
+}
+
+body {
+  font-family: 'Michroma', sans-serif;
+  background-color: var(--sub-color);
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1240px;
+  max-width: 90%;
+}
+
+.smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+@import 'blocks/_btn';
+@import 'blocks/_titles';
+@import 'blocks/_description';
+@import 'blocks/_bgEffects';
+@import 'blocks/_arrow';
+@import 'blocks/_form';
+@import 'blocks/_promo';
+@import 'blocks/_nav';
+@import 'blocks/_need';
+@import 'blocks/_cart';
+@import 'blocks/_frequently';
+@import 'blocks/_store';
+@import 'blocks/_deals';
+@import 'blocks/_pure';
+@import 'blocks/_customer';
+@import 'blocks/_newsletter';
+@import 'blocks/_footer';
+@import 'blocks/_menu';
+@import 'blocks/_preloader';
+@import 'blocks/_scrollBar';
+@import 'blocks/_cursor';
+@import './_media';

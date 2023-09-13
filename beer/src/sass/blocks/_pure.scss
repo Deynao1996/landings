@@ -1,0 +1,63 @@
+.pure {
+  min-height: 100vh;
+  // background: url('../img/bg/pure.jpg') center top/cover no-repeat;
+  // background-position-y: 0;
+  padding: 100px 0 100px 0;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  &__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(1);
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  & > .container {
+    z-index: 3;
+  }
+  & .description {
+    color: #fefefe;
+    line-height: 1.6rem;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+  }
+  &__wrapper {
+    margin-top: 117px;
+    display: flex;
+    max-width: 450px;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+  }
+  &__star {
+    margin-bottom: 89px;
+    width: 120px;
+    text-align: center;
+    font-size: 35.4px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -79%;
+      left: -24%;
+      background: url('../icons/polygon.png');
+      width: 185px;
+      height: 183px;
+    }
+  }
+}

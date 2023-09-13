@@ -1,0 +1,30 @@
+.newsletter {
+  min-height: 765px;
+  padding-bottom: 131px;
+  background-color: var(--sub-color);
+  position: relative;
+  z-index: 1;
+  &__form {
+    margin: 0 auto;
+    margin-top: 92px;
+    & > input,
+    textarea::placeholder {
+      opacity: 0.5;
+      font-size: 1rem;
+    }
+  }
+  &__rec {
+    position: absolute;
+    &_small {
+      z-index: -1;
+      top: 25%;
+      left: 0;
+      transform: scale(1.4);
+    }
+    &_big {
+      bottom: 0;
+      right: 10%;
+      z-index: -1;
+    }
+  }
+}

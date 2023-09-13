@@ -1,0 +1,31 @@
+@mixin inner-content {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  &_absolute {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+  }
+  & > span {
+    font-size: 16.7px;
+    font-weight: 400;
+    color: var(--main-color);
+  }
+  h5 {
+    font-size: 41px;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--main-color);
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+    gap: 7px;
+    list-style: none;
+  }
+}

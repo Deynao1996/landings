@@ -1,0 +1,119 @@
+.cart {
+  background-color: var(--sub-color);
+  width: 100%;
+  padding: 128px 0 254px 0;
+  min-height: 975px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &__gallery {
+    display: flex;
+    position: absolute;
+    gap: 100px;
+    top: 128px;
+    left: -40%;
+    z-index: -1;
+  }
+  &__image {
+    width: 387px;
+    height: 601px;
+    &_small {
+      width: 247px;
+      left: 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &__calc {
+    max-width: 565px;
+    display: flex;
+    justify-content: space-between;
+    & > span {
+      font-size: 84.4px;
+      font-weight: 400;
+      color: var(--main-color);
+    }
+  }
+  &__sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+    span {
+      font-size: 45.5px;
+      font-weight: 700;
+      color: var(--main-color);
+    }
+  }
+  &__plus,
+  &__minus {
+    width: 52px;
+    height: 57px;
+    border: 4px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35.5px;
+    font-weight: 700;
+    color: var(--main-color);
+    user-select: none;
+    cursor: pointer;
+  }
+  &__description {
+    width: 565px;
+    line-height: 1.6rem;
+    text-align: end;
+  }
+  &__add {
+    margin-top: 168px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__classic > span {
+    display: block;
+    max-width: 70%;
+    font-size: 41px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--main-color);
+  }
+  &__stars {
+    margin-top: 30px;
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    & > span {
+      font-size: 16.7px;
+      font-weight: 400;
+      color: var(--main-color);
+    }
+  }
+  &__svg {
+    display: flex;
+    list-style: none;
+    gap: 7px;
+  }
+  &__rec {
+    position: absolute;
+    z-index: -5;
+    &_big {
+      top: 40%;
+      right: 4%;
+      transform: rotate(90deg);
+    }
+    &_small {
+      top: 72%;
+      left: 0%;
+    }
+  }
+  &__btn {
+    visibility: hidden;
+  }
+}

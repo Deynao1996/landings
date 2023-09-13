@@ -1,0 +1,79 @@
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1500;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  backdrop-filter: blur(4px) saturate(150%);
+  border-radius: 50%;
+  cursor: none;
+  transition: 1s ease-out;
+  outline: none;
+  &__img {
+    width: 50%;
+    height: 50%;
+    transition: 0.5s all;
+    pointer-events: none;
+    &.inverted {
+      filter: invert(100%);
+    }
+  }
+}
+
+.circle {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 2000;
+  border: none;
+  margin: 0;
+  font-size: inherit;
+  display: inline-block;
+  padding: 0 0 0.5rem 0;
+  background: none;
+  -webkit-clip-path: circle(40% at 50% 50%);
+  clip-path: circle(40% at 50% 50%);
+  margin-bottom: -2rem;
+  transition: 1s ease-out;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.circle__scroll {
+  position: relative;
+  display: block;
+  width: 150px;
+  animation: rotateIt 12s linear infinite;
+  & > text {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    fill: var(--main-color);
+    letter-spacing: 0.6rem;
+  }
+  & > textpath {
+    letter-spacing: 2rem;
+  }
+}
+
+@keyframes rotateIt {
+  to {
+    transform: rotate(-360deg);
+  }
+}

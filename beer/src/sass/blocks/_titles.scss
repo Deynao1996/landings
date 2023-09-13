@@ -1,0 +1,42 @@
+.titles {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 96.8px;
+    line-height: 100px;
+    font-weight: 700;
+    font-style: italic;
+    color: transparent;
+    position: relative;
+    span {
+      &:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
+        transform: translateX(-6px);
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+        transform: translateX(6px);
+      }
+    }
+  }
+}
+
+.subtitle {
+  z-index: 2;
+  text-align: center;
+  font-size: 66.7px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--main-color);
+}

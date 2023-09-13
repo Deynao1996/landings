@@ -1,0 +1,29 @@
+.store {
+  min-height: 563px;
+  padding: 88px 0 82px 0;
+  background: url('../img/bg/store.jpg') center center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+  & > .container {
+    z-index: 3;
+  }
+  &__descr {
+    display: block;
+    font-size: 41px;
+    line-height: 50px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: var(--main-color);
+  }
+  &__discount {
+    max-width: 40%;
+    margin-left: auto;
+    font-size: 77.5px;
+    line-height: 75px;
+    font-weight: 700;
+    color: var(--main-color);
+    & > span {
+      font-family: Verdana;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+  z-index: 10000;
+  opacity: 0;
+}
+
+.hover-target {
+  &:hover {
+    cursor: none;
+  }
+}
