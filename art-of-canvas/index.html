@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="en" data-theme="garden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtOfCanvas</title>
+    <link rel="stylesheet" href="/src/css/app.css" />
+  </head>
+  <body>
+    <div class="container mx-auto bg-base-100 md:px-10">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-circle btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
+            >
+              <li><a href="#calculator">Calculator</a></li>
+              <li><a href="#advantages">Advantages</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="link"
+            ><img
+              src="/src/img/logo-no-background.png"
+              alt="logo"
+              class="h-8 w-20 sm:h-10 sm:w-24 xl:h-14 xl:w-[10rem]"
+          /></a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-circle btn-ghost" data-modal="design-modal">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <main class="min-h-screen bg-[#f7e7e6] px-10 pt-10">
+      <div class="container mx-auto flex min-h-[inherit] flex-col">
+        <div
+          class="flex flex-grow-0 flex-col items-center justify-between sm:flex-row sm:items-end"
+        >
+          <div>
+            <p class="text-center font-eb text-xl text-primary sm:text-left">
+              ArtOfCanvas.art
+            </p>
+            <span class="text-center sm:text-left"
+              >Turn a photo into a real painting!</span
+            >
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+              />
+            </svg>
+
+            <a href="tel:8800234-23-34" class="link-hover link font-bold"
+              >8 800 234-23-34</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-1 flex-col-reverse items-end justify-center gap-20 lg:flex-row"
+        >
+          <div class="swiper !hidden max-w-[687px] sm:!block" id="hero-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/src/img/hero/hero-1.png" alt="Hero" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/hero/hero-2.png" alt="Hero-2" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-1 flex-col items-center justify-center self-center"
+          >
+            <p class="mt-14 font-bold text-xl">Best gift for you</p>
+            <h1 class="mt-10 font-eb text-5xl">PORTRAIT</h1>
+            <ul
+              class="mt-20 grid grid-cols-1 gap-x-20 gap-y-5 font-light sm:grid-cols-2"
+            >
+              <li class="list-image-checkmark pl-2">Minimum Price Guarantee</li>
+              <li class="list-image-checkmark pl-2">
+                30% cheaper than <br />competitors
+              </li>
+              <li class="list-image-checkmark pl-2">
+                When ordering from the <br />site, discounts up to 30%!
+              </li>
+              <li class="list-image-checkmark pl-2">
+                Urgent production in 3 <br />
+                hours!
+              </li>
+            </ul>
+            <p class="mt-10 text-center font-bold text-primary">
+              Send a photo now and receive a design in 1 hour
+            </p>
+            <button class="pill" data-modal="design-modal">
+              Order a portrait
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- PROMO -->
+    <section class="relative">
+      <div class="container mx-auto p-10">
+        <div
+          class="flex flex-col-reverse items-center justify-around gap-5 md:flex-row"
+          id="promo"
+        >
+          <figure>
+            <img src="/src/img/promo-1.png" alt="promo" />
+          </figure>
+          <div class="flex flex-col gap-5 md:basis-[350px]">
+            <p class="paragraph">Just send a photo and</p>
+            <h2 class="title">
+              We will send you a design for free within 1 hour!
+            </h2>
+            <button class="pill sm:w-3/6 md:w-full" data-modal="design-modal">
+              Order a portrait design
+            </button>
+          </div>
+        </div>
+      </div>
+      <figure class="absolute -bottom-2/3 right-0 -z-10 hidden xl:block">
+        <img src="/src/img/palette.png" alt="palette" />
+      </figure>
+    </section>
+
+    <!-- STYLES -->
+    <section class="wow animate__fadeInUp py-10">
+      <div class="container mx-auto">
+        <p class="paragraph text-center">Portrait on canvas</p>
+        <h3 class="title mt-10 text-center">Popular drawing styles</h3>
+        <ul
+          class="mt-10 grid grid-cols-1 justify-around gap-x-20 gap-y-10 px-10 sm:grid-cols-2 sm:px-0 md:mx-20 lg:grid-cols-4"
+          id="styles"
+        >
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-1.jpg"
+                alt="Oil"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Oil</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-2.jpg"
+                alt="Watercolor"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Watercolor</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-3.jpg"
+                alt="Pencil"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Pencil!</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-4.jpg"
+                alt="With-a-pen"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">With a pen!</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-5.jpg"
+                alt="Pastel"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Pastel</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-6.jpg"
+                alt="Pop-Art"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Pop Art</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-7.png"
+                alt="Photomosaic"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Photomosaic</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card bg-base-100 shadow-xl">
+            <figure class="pt-10">
+              <img
+                src="/src/img/styles/styles-8.jpg"
+                alt="Cartoon"
+                class="h-[214px] w-[153px] rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <span class="card-title">Cartoon</span>
+              <div class="card-actions">
+                <button
+                  class="link-hover link text-primary"
+                  data-modal="callback-modal"
+                >
+                  More details
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CARD -->
+    <section class="relative pt-10">
+      <div
+        class="card card-side mx-auto w-9/12 bg-secondary shadow-xl sm:px-10 sm:pt-20"
+      >
+        <figure class="!hidden sm:!flex">
+          <img src="/src/img/card-1.png" alt="Card" />
+        </figure>
+        <div class="card-body space-y-5">
+          <h5 class="title">Stunning flip flop portrait in pop art style</h5>
+          <p class="paragraph">
+            You will give bright emotions that will be remembered for a long
+            time!
+          </p>
+          <div class="card-actions">
+            <button class="pill" data-modal="callback-modal">
+              More details
+            </button>
+          </div>
+        </div>
+      </div>
+      <figure class="absolute left-0 top-0 -z-10 hidden sm:block">
+        <img src="/src/img/paints.png" alt="palette" />
+      </figure>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="py-10 sm:py-20" id="calculator">
+      <div class="container mx-auto">
+        <p class="paragraph text-center">Calculator</p>
+        <h6 class="title mt-10 text-center">
+          Calculate the cost and get a 30% discount
+        </h6>
+        <div
+          class="mt-20 grid grid-cols-1 items-start justify-between gap-10 px-10 sm:grid-cols-2 md:px-20"
+        >
+          <form
+            action="#"
+            class="flex flex-col items-center gap-8"
+            data-submit="order"
+          >
+            <p class="font-bold text-xl">Upload your photo</p>
+            <input
+              type="file"
+              required
+              class="file-input file-input-bordered file-input-primary w-full max-w-xs"
+            />
+            <select
+              class="select select-bordered select-primary w-full max-w-xs"
+              required
+            >
+              <option disabled selected>Select painting size</option>
+              <option>40x50</option>
+              <option>50x70</option>
+              <option>70x70</option>
+              <option>70x100</option>
+            </select>
+            <select
+              class="select select-bordered select-primary w-full max-w-xs"
+              required
+            >
+              <option disabled selected>Select painting material</option>
+              <option>Fiber canvas</option>
+              <option>Linen canvas</option>
+              <option>Natural canvas</option>
+            </select>
+            <select
+              class="select select-bordered select-primary w-full max-w-xs"
+            >
+              <option disabled selected>Additional services</option>
+              <option>Art gel coating</option>
+              <option>Express production</option>
+              <option>Delivery after finish</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Enter your promo code"
+              class="input input-bordered input-primary w-full max-w-xs"
+            />
+            <div class="bg-secondary p-10 text-center lg:w-3/5" id="calc-msg">
+              To calculate, you need to select the size of the painting and the
+              material of the painting
+            </div>
+            <button class="pill btn-wide" type="submit">Quick order</button>
+          </form>
+          <figure
+            class="flex max-w-[500px] flex-col items-center justify-center"
+          >
+            <img src="/src/img/calc-1.png" alt="Calculator" />
+            <blockquote class="sm:w-3/4">
+              The proportional size of the image is calculated automatically. If
+              you want to crop the image or simply find out the cost of the
+              desired size of the painting, uncheck the “Proportional” box
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="py-10 sm:py-20">
+      <div class="container mx-auto">
+        <p class="paragraph text-center">Work examples</p>
+        <h6 class="title mt-10 text-center">
+          Who are we making a portrait for?
+        </h6>
+        <div id="tab-wrapper" class="min-h-[90vh] 2xl:min-h-[70vh]">
+          <div
+            class="p-x-10 mt-10 flex items-center justify-center sm:my-16"
+            id="tabs"
+          >
+            <div class="tabs mx-auto justify-center">
+              <a
+                class="tab tab-active sm:tab-sm lg:tab-lifted lg:tab-lg"
+                data-tab="all"
+                >All works</a
+              >
+              <a class="tab tab-lifted sm:tab-sm lg:tab-lg" data-tab="lover"
+                >For lovers</a
+              >
+              <a class="tab tab-lifted sm:tab-sm lg:tab-lg" data-tab="boss"
+                >For the boss</a
+              >
+              <a class="tab tab-lifted sm:tab-sm lg:tab-lg" data-tab="girl"
+                >For a girl</a
+              >
+              <a class="tab tab-lifted sm:tab-sm lg:tab-lg" data-tab="guy"
+                >For a guy</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="mt-10 grid grid-cols-1 gap-5 px-5 sm:grid-cols-2 lg:grid-cols-5"
+            id="tab-list"
+          >
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-1.jpg"
+              class="girl tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-1.jpg" alt="portfolio-1" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-2.jpg"
+              class="girl tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-2.jpg" alt="portfolio-2" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-3.jpg"
+              class="lover tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-3.jpg" alt="portfolio-3" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-4.jpg"
+              class="guy tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-4.jpg" alt="portfolio-4" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-5.jpg"
+              class="boss tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-5.jpg" alt="portfolio-5" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-6.jpg"
+              class="lover tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-6.jpg" alt="portfolio-6" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-7.jpg"
+              class="lover tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-7.jpg" alt="portfolio-7" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-8.jpg"
+              class="girl tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-8.jpg" alt="portfolio-8" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-9.jpg"
+              class="girl tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img src="/src/img/portfolio/portfolio-9.jpg" alt="portfolio-9" />
+            </a>
+            <a
+              data-fslightbox="gallery"
+              href="/src/img/portfolio/portfolio-10"
+              class="boss tab-item all cursor-pointer justify-self-center hover:shadow-xl"
+            >
+              <img
+                src="/src/img/portfolio/portfolio-10.jpg"
+                alt="portfolio-1"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIFT -->
+    <section
+      class="bg-gift bg-cover bg-left bg-no-repeat py-10 sm:bg-center sm:py-20"
+    >
+      <div class="container mx-auto">
+        <div class="w-full px-5 sm:w-3/5 lg:px-20">
+          <p class="paragraph">Portrait from photo</p>
+          <h6 class="title mt-10">The best gift for everyone!</h6>
+          <p class="mt-5 font-light text-xl leading-relaxed sm:mt-20">
+            A portrait from a photograph is made on high-quality canvas, so
+            don’t worry about the safety of your gift! Such a nice gift will fit
+            perfectly into the interior
+          </p>
+          <ul
+            class="mt-16 flex flex-wrap justify-center gap-20 pl-10 font-eb sm:justify-start"
+          >
+            <li class="relative z-10">
+              Gift with taste
+              <img
+                src="/src/img/gift/gift-1.png"
+                alt="gift-1"
+                class="absolute -left-10 bottom-0 -z-10"
+              />
+            </li>
+            <li class="relative z-10">
+              Will always be in trend
+              <img
+                src="/src/img/gift/gift-2.png"
+                alt="gift-2"
+                class="absolute -left-10 bottom-0 -z-10"
+              />
+            </li>
+            <li class="relative z-10">
+              Everyone will be delighted
+              <img
+                src="/src/img/gift/gift-3.png"
+                alt="gift-3"
+                class="absolute -left-10 bottom-0 -z-10"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="bg-[#ffffff] pt-10 sm:pt-20" id="advantages">
+      <div class="container mx-auto">
+        <p class="paragraph text-center">Our advantages</p>
+        <h6 class="title mt-10 text-center">Why choose us?</h6>
+        <ul
+          class="ml:mr-40 mt-32 grid grid-cols-1 justify-center gap-x-20 pl-20 font-bold text-xl md:grid-cols-2 lg:grid-cols-3"
+        >
+          <li class="relative z-10 h-[250px] max-w-[250px] justify-self-center">
+            <img
+              src="/src/img/features/features-1.png"
+              alt="feature-1"
+              class="absolute -left-24 -top-20 -z-10"
+            />Natural canvas and the best paints
+          </li>
+          <li class="relative z-10 h-[250px] max-w-[250px] justify-self-center">
+            <img
+              src="/src/img/features/features-2.png"
+              alt="feature-2"
+              class="absolute -left-24 -top-20 -z-10"
+            />Minimum Price Guarantee
+          </li>
+          <li class="relative z-10 h-[250px] max-w-[250px] justify-self-center">
+            <img
+              src="/src/img/features/features-3.png"
+              alt="feature-3"
+              class="absolute -left-24 -top-20 -z-10"
+            />Large selection of decorative frames
+          </li>
+          <li class="relative z-10 h-[250px] max-w-[250px] justify-self-center">
+            <img
+              src="/src/img/features/features-4.png"
+              alt="feature-4"
+              class="absolute -left-24 -top-20 -z-10"
+            />Painted by professional artists
+          </li>
+          <li class="relative z-10 h-[250px] max-w-[250px] justify-self-center">
+            <img
+              src="/src/img/features/features-5.png"
+              alt="feature-5"
+              class="absolute -left-32 -top-20 -z-10"
+            />Anti-aging protection up to 70 years
+          </li>
+          <li class="relative z-10 h-[250px] max-w-[250px] justify-self-center">
+            <img
+              src="/src/img/features/features-6.png"
+              alt="feature-6"
+              class="absolute -left-32 -top-20 -z-10"
+            />Delivery anywhere in the world
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SIZES -->
+    <section
+      class="min-h-screen bg-sizes bg-cover bg-no-repeat py-10 sm:bg-right-bottom sm:py-20"
+    >
+      <div class="container mx-auto">
+        <p class="paragraph text-center">Popular sizes and prices</p>
+        <h6 class="title mt-10 text-center">
+          We can make a painting of any size!
+        </h6>
+        <div class="flex items-center justify-center">
+          <ul
+            class="mt-20 flex flex-wrap justify-center gap-10"
+            id="sizes-list"
+          >
+            <li
+              class="group relative flex h-[187px] w-[158px] flex-col items-center justify-between border-4 border-base-100 bg-secondary-focus p-2"
+            >
+              <p class="font-eb text-xl text-neutral">40x50</p>
+              <div class="flex flex-col items-center">
+                <span class="font-light text-sm line-through">UAH 5,290</span>
+                <p class="font-bold">UAH 3,670</p>
+              </div>
+              <figure
+                class="absolute left-0 top-0 h-full w-full opacity-0 transition-opacity ease-out group-hover:opacity-100"
+              >
+                <img
+                  src="src/img/sizes/sizes-1-1.png"
+                  alt="size-1"
+                  class="h-full w-full object-cover"
+                />
+              </figure>
+            </li>
+            <li
+              class="group relative flex h-[245px] w-[168px] flex-col items-center justify-between border-4 border-base-100 bg-secondary-focus p-2"
+            >
+              <p class="font-eb text-xl text-neutral">50750</p>
+              <div class="flex flex-col items-center">
+                <span class="font-light text-sm line-through">UAH 5,290</span>
+                <p class="font-bold">UAH 3,670</p>
+              </div>
+              <figure
+                class="absolute left-0 top-0 h-full w-full opacity-0 transition-opacity ease-out group-hover:opacity-100"
+              >
+                <img
+                  src="src/img/sizes/sizes-2-1.png"
+                  alt="size-1"
+                  class="h-full w-full object-cover"
+                />
+              </figure>
+            </li>
+            <li class="flex flex-col items-center">
+              <div
+                class="group relative flex h-[245px] w-[245px] flex-col items-center justify-between border-4 border-base-100 bg-secondary-focus p-2"
+              >
+                <p class="font-eb text-xl text-neutral">70x70</p>
+                <div class="flex flex-col items-center">
+                  <span class="font-light text-sm line-through">UAH 5,290</span>
+                  <p class="font-bold">UAH 3,670</p>
+                </div>
+                <figure
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-opacity ease-out group-hover:opacity-100"
+                >
+                  <img
+                    src="src/img/sizes/sizes-3-1.png"
+                    alt="size-1"
+                    class="h-full w-full object-cover"
+                  />
+                </figure>
+              </div>
+              <div
+                class="badge badge-info gap-2 rounded-none bg-[#f99300] p-5 text-base-100 text-neutral"
+              >
+                BESTSELLER
+              </div>
+            </li>
+            <li
+              class="group relative flex h-[322px] w-[245px] flex-col items-center justify-between border-4 border-base-100 bg-secondary-focus p-2"
+            >
+              <p class="font-eb text-xl text-neutral">70x100</p>
+              <div class="flex flex-col items-center">
+                <span class="font-light text-sm line-through">UAH 5,290</span>
+                <p class="font-bold">UAH 3,670</p>
+              </div>
+              <figure
+                class="absolute left-0 top-0 h-full w-full opacity-0 transition-opacity ease-out group-hover:opacity-100"
+              >
+                <img
+                  src="src/img/sizes/sizes-4-1.png"
+                  alt="size-1"
+                  class="h-full w-full object-cover"
+                />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEME -->
+    <section class="py-10 sm:py-20">
+      <div class="container mx-auto">
+        <p class="paragraph text-center">How we will work with you</p>
+        <h6 class="title mt-10 text-center">
+          The process of making a painting
+        </h6>
+        <div class="mt-10 flex items-center justify-center">
+          <ul class="flex flex-wrap justify-center gap-10 md:gap-20">
+            <li
+              class="flex flex-1 basis-[400px] flex-col items-center justify-end gap-5 text-center font-bold"
+            >
+              <img src="/src/img/scheme/scheme-1.png" alt="scheme-1" />
+              <p>Send a photo and your wishes</p>
+            </li>
+            <li
+              class="flex flex-1 basis-[400px] flex-col items-center justify-end gap-5 text-center font-bold"
+            >
+              <img src="/src/img/scheme/scheme-2.png" alt="scheme-2" />
+              <p>We prepare design options tailored to your requirements</p>
+            </li>
+            <li
+              class="flex flex-1 basis-[400px] flex-col items-center justify-end gap-5 text-center font-bold"
+            >
+              <img src="/src/img/scheme/scheme-3.png" alt="scheme-3" />
+              <p>You approve the layout and the artist begins work</p>
+            </li>
+            <li
+              class="flex flex-1 basis-[400px] flex-col items-center justify-end gap-5 text-center font-bold"
+            >
+              <img src="/src/img/scheme/scheme-4.png" alt="scheme-4" />
+              <p>Choose the option of framing frame and design</p>
+            </li>
+            <li
+              class="flex flex-1 basis-[400px] flex-col items-center justify-end gap-5 text-center font-bold"
+            >
+              <img src="/src/img/scheme/scheme-5.png" alt="scheme-5" />
+              <p>The address and convenient delivery time are agreed upon</p>
+            </li>
+            <li
+              class="flex flex-1 basis-[400px] flex-col items-center justify-end gap-5 text-center font-bold"
+            >
+              <img src="/src/img/scheme/scheme-6.png" alt="scheme-6" />
+              <p>
+                You pay the remaining amount to the courier upon receipt of the
+                painting
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="py-10 sm:py-20">
+      <div
+        id="promo-1"
+        class="card card-side mx-auto w-9/12 bg-secondary shadow-xl sm:px-10 sm:pt-20"
+      >
+        <figure class="!hidden sm:!flex">
+          <img src="/src/img/card-2.jpg" alt="Card-2" />
+        </figure>
+        <div class="card-body space-y-5">
+          <h5 class="title">Decoration in baguette frames</h5>
+          <p class="paragraph">
+            We can offer you design in any frame from a huge assortment at your
+            request.
+          </p>
+          <div class="card-actions">
+            <button class="pill" data-modal="callback-modal">
+              More details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="promo-2"
+        class="card card-side mx-auto mt-20 w-9/12 flex-row-reverse bg-secondary shadow-xl sm:px-10 sm:pt-20"
+      >
+        <figure class="!hidden sm:!flex">
+          <img src="/src/img/card-3.png" alt="Card-3" />
+        </figure>
+        <div class="card-body space-y-5">
+          <h5 class="title">Order an oil portrait from a portrait artist</h5>
+          <p class="paragraph">
+            Exclusive, high quality, detailed hand drawing.
+          </p>
+          <div class="card-actions">
+            <button class="pill" data-modal="callback-modal">
+              More details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="promo-3"
+        class="card card-side mx-auto mt-20 w-9/12 flex-row-reverse bg-base-100 sm:px-10 sm:pt-20"
+      >
+        <figure class="!hidden sm:!flex">
+          <img src="/src/img/promo-2.png" alt="promo-2" />
+        </figure>
+        <div class="card-body space-y-5">
+          <p class="paragraph">Did not you find what you were looking for?</p>
+          <h5 class="title">
+            Download our catalog with 50 style options for free!
+          </h5>
+          <div class="card-actions">
+            <button class="pill">Download catalog</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="hidden bg-secondary py-10 sm:block sm:py-20">
+      <div class="container mx-auto lg:px-32">
+        <div
+          class="swiper swiper-no-swiping pointer-events-none max-h-[800px] sm:max-h-[500px]"
+          id="feedback-swiper"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="grid grid-cols-1 gap-10 px-5 sm:grid-cols-3">
+                <figure class="flex flex-col">
+                  <img
+                    src="/src/img/feedback/feedback-1.png"
+                    alt="feedback-1"
+                  />
+                  <button class="pill" data-modal="design-modal">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                    I want the same
+                  </button>
+                </figure>
+                <div
+                  class="flex flex-col items-center justify-center gap-10 justify-self-center text-center sm:col-span-2 sm:w-3/4"
+                >
+                  <h6 class="font-eb text-3xl">
+                    “...I received exactly what I dreamed of, and delivered
+                    directly to my home!...”
+                  </h6>
+                  <p class="font-light">
+                    I live in a small village and for me ordering a portrait was
+                    a real feat! He showed us photos of my wife and I and asked
+                    us to make several layouts to choose from. To my surprise,
+                    very soon they sent me not just a few, but as many as 15
+                    different designs! I chose the best one and placed an order.
+                  </p>
+                  <span><b>Oleg Petrov</b>, Mesyagutovo village</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="grid grid-cols-1 gap-10 px-5 sm:grid-cols-3">
+                <figure class="flex flex-col">
+                  <img
+                    src="/src/img/feedback/feedback-2.jpg"
+                    alt="feedback-1"
+                  />
+                  <button class="pill" data-modal="design-modal">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                    I want the same
+                  </button>
+                </figure>
+                <div
+                  class="flex flex-col items-center justify-center gap-10 justify-self-center text-center sm:col-span-2 sm:w-3/4"
+                >
+                  <h6 class="font-eb text-3xl">
+                    "...I am delighted! I didn’t think that a portrait could be
+                    so beautiful!..."
+                  </h6>
+                  <p class="font-light">
+                    My friend’s husband gave a portrait to her, and I also
+                    wanted to order one. Of all the layouts, this one
+                    immediately sank into my soul! And it fits perfectly into
+                    the interior of my living room. Now it hangs here in a place
+                    of honor, and I love it every time. All my family really
+                    liked it too!
+                  </p>
+                  <span><b>Irina Antonova</b>, Kislovodsk</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="grid grid-cols-1 gap-10 px-5 sm:grid-cols-3">
+                <figure class="flex flex-col">
+                  <img
+                    src="/src/img/feedback/feedback-3.jpg"
+                    alt="feedback-3"
+                  />
+                  <button class="pill" data-modal="design-modal">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                    I want the same
+                  </button>
+                </figure>
+                <div
+                  class="flex flex-col items-center justify-center gap-10 justify-self-center text-center sm:col-span-2 sm:w-3/4"
+                >
+                  <h6 class="font-eb text-3xl">
+                    “...An unexpected birthday gift from friends...”
+                  </h6>
+                  <p class="font-light">
+                    I would like to share my impressions of the gift I received
+                    yesterday. Great job done with natural paints! As a pedantic
+                    person, I love little things, they are very important to me,
+                    and here they are made in a cool way - they drew a watch, my
+                    favorite sweater, a T-shirt with an elastic band. A very
+                    positive cartoon made from my photograph.
+                  </p>
+                  <span><b>Narek Margaryan</b>, Velikie Luki</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination hidden sm:block"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="relative py-10 sm:py-20" id="faq">
+      <img
+        src="/src/img/spirt.png"
+        alt="spirit"
+        class="absolute -top-1/3 left-0 hidden lg:block"
+      />
+      <img
+        src="/src/img/brushes.png"
+        alt="brushes"
+        class="absolute bottom-0 right-0"
+      />
+      <div class="container mx-auto">
+        <p class="paragraph text-center">FAQ</p>
+        <h6 class="title mt-10 text-center">
+          We will answer any of your questions
+        </h6>
+        <div class="mx-auto flex items-center justify-center sm:w-3/5">
+          <div class="join join-vertical mt-20 px-5">
+            <div
+              class="collapse join-item collapse-arrow border border-base-300 bg-base-100"
+            >
+              <input
+                type="radio"
+                name="my-accordion-4"
+                checked="checked"
+                class="peer"
+              />
+              <div
+                class="collapse-title text-xl font-medium peer-checked:text-primary"
+              >
+                How long does it take to produce an order?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  The lead time for an order depends on three factors: the
+                  complexity of the painting, the style of writing and the size.
+                  The average order fulfillment time is 7 days excluding
+                  delivery time. In some cases, at the request of the customer,
+                  the period can be reduced to 5 days.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse-arrow collapse join-item border border-base-300 bg-base-100"
+            >
+              <input type="radio" name="my-accordion-4" class="peer" />
+              <div
+                class="collapse-title text-xl font-medium peer-checked:text-primary"
+              >
+                Will I be able to see the painting before I receive it?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Yes. When ready, we send a digital photo of your painting by
+                  email so that you can, if necessary, make your adjustments and
+                  wishes, if any. You can also see the painting “live” in our
+                  showroom. Report this to your manager.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse-arrow collapse join-item border border-base-300 bg-base-100"
+            >
+              <input type="radio" name="my-accordion-4" class="peer" />
+              <div
+                class="collapse-title text-xl font-medium peer-checked:text-primary"
+              >
+                What format should the photographs be?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  We work with all known image formats! Through the site you can
+                  upload JPEG, TIFF, PNG up to 50 megabytes in size. You must
+                  own the copyright or have permission to use the image. If you
+                  have a different image format (RAW, PDF), then you can use an
+                  FTP uploader. If you would like a photo taken from a paper
+                  photograph (not digital), send it to us and we will scan,
+                  process and return the photo with your order!
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse-arrow collapse join-item border border-base-300 bg-base-100"
+            >
+              <input type="radio" name="my-accordion-4" class="peer" />
+              <div
+                class="collapse-title text-xl font-medium peer-checked:text-primary"
+              >
+                Can I give special instructions to the artist?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  When you place your order on the site, you can add your
+                  comments in a special text field. You can also: combine
+                  objects from different photos into one or delete objects from
+                  a photo, you can change the background, change clothes,
+                  outfits, make a color painting from a black and white photo,
+                  and also order a painting from a damaged or old photo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN -->
+    <section class="bg-secondary py-10 sm:py-20">
+      <div class="container mx-auto">
+        <div class="card card-side mx-auto w-9/12 bg-secondary sm:px-10">
+          <figure class="!hidden scale-110 sm:!flex">
+            <img src="/src/img/promo-3.png" alt="promo-3" />
+          </figure>
+          <div class="card-body justify-between space-y-5">
+            <div>
+              <p class="paragraph">Just send a photo and</p>
+              <h5 class="title mt-10">
+                We will send you a design for free within 1 hour!
+              </h5>
+            </div>
+            <div class="card-actions">
+              <button class="pill" data-modal="design-modal">
+                Order a design
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION -->
+    <section class="py-10 sm:py-20">
+      <div class="container mx-auto">
+        <div class="paragraph text-center">Still have questions?</div>
+        <h6 class="title mt-10 text-center">Get an artist consultation!</h6>
+        <form
+          action="#"
+          class="mt-10 flex flex-col items-center gap-5 p-5 md:mt-20"
+          data-submit="consultation"
+        >
+          <div
+            class="join join-vertical mx-auto w-full justify-self-center sm:join-horizontal md:w-3/4"
+          >
+            <input
+              required
+              type="text"
+              placeholder="Your name"
+              class="input join-item input-bordered w-full"
+            /><input
+              required
+              type="text"
+              placeholder="Your phone number"
+              class="input join-item input-bordered w-full max-w-lg"
+            /><input
+              required
+              type="text"
+              placeholder="Your phone number"
+              class="input join-item input-bordered w-full max-w-2xl"
+            />
+          </div>
+          <input
+            required
+            type="text"
+            placeholder="Ask your question here"
+            class="input join-item input-bordered w-full md:w-3/4"
+          />
+          <button class="pill" type="submit">Get a consultation</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-base-200 p-10 text-base-content">
+      <nav>
+        <header class="footer-title">Services</header>
+        <a class="link-hover link">Branding</a>
+        <a class="link-hover link">Design</a>
+        <a class="link-hover link">Marketing</a>
+        <a class="link-hover link">Advertisement</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Company</header>
+        <a class="link-hover link">About us</a>
+        <a class="link-hover link">Contact</a>
+        <a class="link-hover link">Jobs</a>
+        <a class="link-hover link">Press kit</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link-hover link">Terms of use</a>
+        <a class="link-hover link">Privacy policy</a>
+        <a class="link-hover link">Cookie policy</a>
+      </nav>
+    </footer>
+    <footer
+      class="footer border-t border-base-300 bg-base-200 px-10 py-4 text-base-content"
+    >
+      <aside class="grid-flow-col items-center">
+        <img
+          src="/src/img/logo-no-background.png"
+          alt="logo"
+          class="w-18 sm:w-22 h-6 sm:h-8 xl:h-12 xl:w-[8rem]"
+        />
+        <p>ACME Industries Ltd. <br />Providing reliable tech since 1992</p>
+      </aside>
+      <nav class="md:place-self-center md:justify-self-end">
+        <div class="grid grid-flow-col gap-4">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg
+          ></a>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- DIALOGS -->
+    <!-- DESIGN -->
+    <dialog id="design-modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <span class="font-bold text-lg">Order a portrait design:</span>
+        <form method="dialog">
+          <button
+            class="btn btn-circle btn-ghost btn-sm absolute right-2 top-4"
+          >
+            ✕
+          </button>
+        </form>
+        <form
+          data-submit="design"
+          action="#"
+          class="mt-10 flex flex-col items-center justify-between gap-5"
+        >
+          <div class="join join-vertical w-full">
+            <input
+              required
+              type="file"
+              class="file-input join-item file-input-bordered file-input-primary w-full border-primary"
+            />
+            <input
+              required
+              type="text"
+              placeholder="Your name"
+              class="input join-item input-bordered input-primary w-full"
+            />
+            <input
+              required
+              type="text"
+              placeholder="Your phone"
+              class="input join-item input-bordered input-primary w-full"
+            />
+            <input
+              required
+              type="text"
+              placeholder="Your email"
+              class="input join-item input-bordered input-primary w-full"
+            />
+          </div>
+          <textarea
+            class="textarea textarea-bordered textarea-primary w-full resize-none"
+            placeholder="Your comment"
+          ></textarea>
+          <button class="pill" type="submit">Send to designer</button>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- CALLBACK -->
+    <dialog id="callback-modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <span class="font-bold text-lg">
+          Still have questions? Request a call back
+        </span>
+        <form method="dialog">
+          <button
+            class="btn btn-circle btn-ghost btn-sm absolute right-2 top-4"
+          >
+            ✕
+          </button>
+        </form>
+        <form
+          data-submit="callback"
+          action="#"
+          class="mt-10 flex flex-col items-center justify-between gap-5"
+        >
+          <input
+            required
+            type="text"
+            placeholder="Your name"
+            class="input join-item input-bordered input-primary w-full md:w-3/4"
+          />
+          <input
+            required
+            type="text"
+            placeholder="Your phone"
+            class="input join-item input-bordered input-primary w-full md:w-3/4"
+          />
+          <button class="pill" type="submit">Get consultation</button>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- CODE -->
+    <dialog id="gift-modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <span class="text-center font-eb text-2xl"
+          >We have a gift for you!
+        </span>
+        <form method="dialog">
+          <button
+            class="btn btn-circle btn-ghost btn-sm absolute right-2 top-4"
+          >
+            ✕
+          </button>
+        </form>
+        <div class="mt-14 flex flex-col items-center justify-center gap-14">
+          <figure>
+            <img src="/src/img/gift.png" alt="gift" />
+          </figure>
+          <div class="w-3/4 text-center font-light" id="code-info">
+            Enter promo code
+            <div class="tooltip" data-tip="Copy" id="code-tooltip">
+              <button class="link-hover link font-bold active:opacity-80">
+                DBVISION
+              </button>
+            </div>
+            and get a
+            <span class="font-bold" id="code-percentage">30%</span> discount on
+            a pop-art portrait of any size!
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- FIXED -->
+    <button
+      class="fixed bottom-12 right-10 z-20 hidden animate-bounce md:block"
+      id="gift"
+    >
+      <img src="/src/img/gift.png" alt="gift" />
+    </button>
+
+    <!-- ALERT -->
+    <div
+      class="fixed bottom-5 left-1/2 z-30 hidden max-w-xs -translate-x-1/2 rounded-md border bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800"
+      role="alert"
+      id="alert"
+    >
+      <div class="flex p-4">
+        <div class="flex-shrink-0">
+          <svg
+            class="mt-0.5 h-4 w-4 text-green-500"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+            />
+          </svg>
+        </div>
+        <div class="ml-3">
+          <p class="text-sm text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facere,
+            praesentium temporibus mollitia ipsa tenetur natus, expedita dolore
+            voluptas sunt doloribus. Dolore pariatur tempora enim quo minus
+            asperiores repellendus dolores.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

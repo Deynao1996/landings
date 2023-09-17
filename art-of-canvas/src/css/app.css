@@ -1,0 +1,35 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .pill {
+    @apply btn btn-primary mt-8 rounded-full px-6 bg-linear-radial hover:shadow-lg font-bold
+  }
+  .paragraph {
+    @apply text-base sm:text-2xl
+  }
+  .title {
+    @apply font-eb text-xl leading-normal sm:text-4xl
+  }
+}
+
+:root {
+  --font-regular: 'Circe Regular';
+  --font-light: 'Circe Light';
+  --font-bold: 'Circe Bold';
+  --font-extra-bold: 'Circe Extra Bold';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: var(--font-regular), sans-serif;
+}
