@@ -1,0 +1,21 @@
+.trusted {
+  min-height: 460px;
+  padding: 114px 0 225px 0;
+  &__title {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #242f51;
+    text-align: center;
+  }
+  &__items {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__item {
+    margin: 38px auto 0 auto;
+  }
+}

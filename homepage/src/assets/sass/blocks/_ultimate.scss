@@ -1,0 +1,28 @@
+.ultimate {
+  min-height: 1020px;
+  padding: 0 0 173px 0;
+  position: relative;
+  &__img {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    height: 730px;
+    z-index: -1;
+    img {
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  &__titles {
+    display: flex;
+    min-height: 162px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+}

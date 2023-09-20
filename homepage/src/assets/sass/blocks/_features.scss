@@ -1,0 +1,29 @@
+.features {
+  position: relative;
+  min-height: 890px;
+  padding-bottom: 230px;
+  &__img {
+    position: absolute;
+    top: -9%;
+    left: 7%;
+    z-index: -1;
+  }
+  &__wrapper {
+    width: 435px;
+    margin-left: auto;
+  }
+  &__titles {
+    width: 440px;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__items {
+    height: 450px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,37 @@
+@import 'base/_fonts';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  z-index: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1175px;
+}
+
+
+@import 'blocks/_btns.scss';
+@import 'blocks/_titles.scss';
+@import 'blocks/_item.scss';
+@import 'blocks/_header.scss';
+@import 'blocks/_promo.scss';
+@import 'blocks/_trusted.scss';
+@import 'blocks/_features.scss';
+@import 'blocks/_smart.scss';
+@import 'blocks/_integration.scss';
+@import 'blocks/_app.scss';
+@import 'blocks/_ultimate.scss';
+@import 'blocks/_charges.scss';
+@import 'blocks/_client.scss';
+@import 'blocks/_questions.scss';
+@import 'blocks/_download.scss';
+@import 'blocks/_footer.scss';
+@import './_media';

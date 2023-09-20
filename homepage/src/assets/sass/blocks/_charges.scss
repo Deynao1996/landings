@@ -1,0 +1,95 @@
+.charges {
+  min-height: 1202px;
+  padding-bottom: 260px;
+  &__titles {
+    width: 670px;
+    min-height: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &__tabs {
+    margin: 0 auto;
+    margin-top: 82px;
+    display: flex;
+    width: 283px;
+    height: 57px;
+    border: 2px solid #ebebeb;
+    border-radius: 28.5px;
+    display: flex;
+    align-items: center;
+  }
+  &__items {
+    &_hide {
+      display: none;
+    }
+    margin-top: 43px;
+    display: grid;
+    grid-template: minmax(554px, auto) / repeat(auto-fit, 317px);
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    grid-auto-rows: minmax(554px, auto);
+  }
+  &__item {
+    background-color: #ffffff;
+    box-shadow: 4px 55px 62px 0px rgba(144,163,177,0.18);
+    border-radius: 9px;
+    padding-bottom: 25px;
+    &_active {
+      border: 2px solid #ebebeb;
+    }
+    &-top {
+      padding: 70px 0 42px 0;
+      background-color: rgba(228, 213, 233, 0.82);
+      &-title {
+        font-size: 60px;
+        font-weight: 600;
+        color: #242f51;
+        text-align: center;
+        span {
+          font-size: 18px;
+          text-align: center;
+          font-weight: 400;
+          color: #999ca5;
+        }
+      }
+      &-subtitle {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        color: #242f51;
+        margin-top: 27px;
+      }
+      &-text {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        color: #999ca5;
+      }
+    }
+    &-bottom {
+      padding: 9px 0 42px 0;
+      &-list {
+        list-style: none;
+        li {
+          text-align: center;
+          margin-top: 30px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #999ca5;
+        }
+      }
+    }
+    &-additional {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #2500f9;
+    }
+  }
+}

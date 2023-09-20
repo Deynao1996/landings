@@ -1,0 +1,19 @@
+.app {
+  min-height: 1180px;
+  padding: 216px 0 188px 0;
+  &__titles {
+    width: 640px;
+    min-height: 170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__items {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,15 @@
+.smart {
+  min-height: 600px;
+  padding-bottom: 114px;
+  &__titles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
