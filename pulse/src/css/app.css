@@ -1,0 +1,46 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1,h2,h3,h4,h5,h6 {
+    @apply font-bold
+  }
+  .title {
+    @apply my-4 text-center text-3xl
+  }
+  .container {
+    @apply mx-auto md:py-20 py-10 px-5
+  }
+  .btn {
+    @apply no-animation border-transparent focus:ring-transparent hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all dark:focus:ring-offset-gray-800
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-focus focus:ring-primary
+  }
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-focus focus:ring-accent
+  }
+  .btn-neutral {
+    @apply bg-neutral hover:bg-neutral-focus focus:ring-neutral
+  }
+}
+
+:root {
+  --font-regular: 'Museo Sans Cyrl';
+  --font-light: 'Museo Sans Cyrl Light';
+  --font-bold: 'Museo Sans Cyrl Bold';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: var(--font-regular), sans-serif;
+}
