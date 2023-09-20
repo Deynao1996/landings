@@ -1,0 +1,56 @@
+.with {
+  padding: 79px 0 81px 0;
+  min-height: 900px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 360px;
+    min-height: 250px;
+    padding: 176px 47px 36px 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid #ececec;
+    &:nth-child(1) {
+      background: url("../img/prengi/prengi_1.png") center center/cover no-repeat;
+    }
+    &:nth-child(2) {
+      background: url("../img/prengi/prengi_2.png") center center/cover no-repeat;
+    }
+    &:nth-child(3) {
+      background: url("../img/prengi/prengi_3.png") center center/cover no-repeat;
+    }
+    &:nth-child(4) {
+      background: url("../img/prengi/prengi_4.png") center center/cover no-repeat;
+    }
+    &:nth-child(5) {
+      background: url("../img/prengi/prengi_5.png") center center/cover no-repeat;
+    }
+    &:nth-child(6) {
+      background: url("../img/prengi/prengi_6.png") center center/cover no-repeat;
+    }
+    &-content {
+      text-align: center;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #393939;
+    }
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 169px;
+    transform: translateY(15px);
+  }
+  &__title {
+    font-size: 48.1px;
+    text-align: center;
+    margin-bottom: 37px;
+    font-weight: 700;
+    color: #393939;
+  }
+}

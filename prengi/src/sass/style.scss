@@ -1,0 +1,27 @@
+@import 'base/_variables';
+@import 'base/_mixins';
+@import 'libs/_fonts';
+@import 'libs/_animations';
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+@import 'blocks/_flags';
+@import 'blocks/_promo';
+@import 'blocks/_with';
+@import 'blocks/_decision';
+@import 'blocks/_advantages';
+@import 'blocks/_clouds';
+@import 'blocks/_tuch';
+@import 'blocks/_footer';
+@import 'blocks/_btns';
