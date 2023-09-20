@@ -1,0 +1,38 @@
+.use {
+  min-height: 855px;
+  padding-bottom: 128px;
+  &__items {
+    margin-top: 85px;
+    display: grid;
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+    gap: 13px 13px;
+    grid-auto-rows: minmax(270px, auto);
+    justify-content: space-around;
+  }
+  &__item {
+    border: 1px solid #000000;
+    padding: 30px 30px 25px 30px;
+    &-logo {
+      height: 65px;
+      max-width: 120px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-title {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #000000;
+    }
+    &-text {
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #000000;
+    }
+  }
+}

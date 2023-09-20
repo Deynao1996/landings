@@ -1,0 +1,46 @@
+.subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+  &:before {
+    @include main-circle;
+  }
+  &_center {
+    text-align: center;
+    &:before {
+      @include main-circle-center;
+    }
+  }
+  &-mini {
+    &:before {
+      @include circle-mini;
+    }
+  }
+}
+
+.title {
+  position: relative;
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  &:after {
+    @include main-divider;
+  }
+  &_center {
+    text-align: center;
+    &:after {
+      @include main-divider-center;
+    }
+    &-empty {
+      &:after {
+        @include main-divider-center;
+        top: 26px;
+      }
+    }
+  }
+}

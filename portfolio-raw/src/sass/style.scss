@@ -1,0 +1,30 @@
+@import 'base/_variables';
+@import 'base/_mixins';
+@import 'libs/_fonts';
+@import 'libs/_animations';
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@import 'blocks/_promo';
+@import 'blocks/_promo_socials';
+@import 'blocks/_promo_ham';
+@import 'blocks/_promo_menu';
+@import 'blocks/_titles';
+@import 'blocks/_about';
+@import 'blocks/_exp';
+@import 'blocks/_use';
+@import 'blocks/_roller';
+@import 'blocks/_portfolio';
+@import 'blocks/_price';
+@import 'blocks/_contact';

@@ -1,0 +1,22 @@
+.promo {
+  &__ham {
+    position: absolute;
+    width: 30px;
+    height: 21px;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    div {
+      width: 100%;
+      height: 3px;
+      background: #151812;
+      &:nth-child(2) {
+        width: 36px;
+      }
+    }
+  }
+}
