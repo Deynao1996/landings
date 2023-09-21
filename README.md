@@ -1,6 +1,6 @@
 # Landings
 
-This repository contains a collection of landing pages created using pure JavaScript and SCSS/TAILWIND/BOOTSTRAP. The repository contains 10 front-end landing pages, 7 of which offer a preview.
+This repository contains a collection of landing pages created using JavaScript, along with SCSS, Tailwind CSS, and Bootstrap to enhance the design and functionality. The repository contains 10 front-end landing pages, 7 of which offer a preview.
 
 ## Projects
 
