@@ -95,16 +95,54 @@ Homepage is a landing page that showcases a new mobile application in a light mo
 
 To use any of the landing pages with live demos, simply click on the provided live demo links above. Feel free to explore the source code in the respective project folders to understand how each landing page was created.
 
-## Contributing
+## Contributing and Development
 
-If you'd like to contribute or make improvements to any of the landing pages in this repository, please follow these guidelines:
+If you'd like to contribute or make improvements to any of the projects in this repository, please follow the steps below:
 
-1. Fork this repository.
-2. Create a new branch for your changes.
-3. Make your improvements and commit them.
-4. Submit a pull request with a detailed description of your changes.
+### Prerequisites
 
-We welcome contributions from the community to make these landing pages even better!
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm installed (for projects built with Node.js and npm)
+- Gulp installed (for projects built with Gulp)
+
+### Project Setup
+
+1. Clone this repository to your local machine.
+
+   ```bash
+   git clone https://github.com/Deynao1996/landings.git
+2. Navigate to the project folder you want to work on.
+   ```bash
+   cd landings/project-folder
+3. Install project dependencies (if applicable).
+   ```bash
+   npm install
+
+### Running the Project
+
+   For projects built with **npm** (Node.js):
+
+   - Use the following command to start a development server:
+   ```bash
+   npm run dev
+   ```
+   For projects built with **Gulp**:
+   - Use the following command to start a development server:
+   ```bash
+   gulp
+   ```
+
+### Making changes
+   1. Create a new branch for your changes:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+   2. Make your improvements and commit your changes.
+   3. Push your changes to your forked repository.
+   4. Submit a pull request to the main repository with a detailed description of your changes.
+
+I welcome contributions from the community to make these landing pages even better!
 
 ## License
 
