@@ -71,8 +71,9 @@ Pulse is a project that provides heart rate monitor services with a catalog, con
 
 ![Portfolio-raw Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273237/portfolio_1_tx8tka.jpg)
 
-Portfolio-raw is a project with a light color theme that offers a portfolio template with sections for about, works, and skills. Explore the source code below:
+Portfolio-raw is a project with a light and dark color themes that offers a portfolio template with sections for about, works, and skills. Explore the source code below:
 
+- **Live Demo:** [Pulse Live Demo](https://deynao1996.github.io/portfolio-template/)
 - **Source Code:** [Portfolio-raw Source Code](https://github.com/deynao1996/landings/tree/main/portfolio-raw)
 
 ### 9. Prengi
