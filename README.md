@@ -6,7 +6,7 @@ This repository contains a collection of landing pages created using JavaScript,
 
 ### 1. Beer
 
-![Beer Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695272111/beer_1_qe0uvr.jpg)
+![Beer Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341571/beer-mockup-resized-min_xzclio.jpg)
 
 Beer is a landing page designed with a black color scheme, offering users the ability to explore different beer options and place orders. Here are the relevant details for this project:
 
@@ -15,7 +15,7 @@ Beer is a landing page designed with a black color scheme, offering users the ab
 
 ### 2. Watches
 
-![Watches Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695272293/watches_1_ub0zdo.jpg)
+![Watches Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341573/watches-mockup-resized-min_cl9tk2.jpg)
 
 Watches is a project that presents a smartwatch mobile application for synchronization and management. Here are the details for this project:
 
@@ -24,7 +24,7 @@ Watches is a project that presents a smartwatch mobile application for synchroni
 
 ### 3. Vista-care
 
-![Vista-care Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695272408/vista_1_p1wtbv.jpg)
+![Vista-care Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341572/vista-mockup-resized-min_vxngbm.jpg)
 
 Vista-care is a project with a soft color scheme, offering users glazing services for balconies, discounts, promotions, and works sections. Explore the project details below:
 
@@ -33,7 +33,7 @@ Vista-care is a project with a soft color scheme, offering users glazing service
 
 ### 4. Art-of-canvas
 
-![Art-of-canvas Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695272540/art_1_h6cik1.jpg)
+![Art-of-canvas Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341571/portrait-mockup-resized-min_lcrzjq.jpg)
 
 Art-of-canvas is a simple landing page with a light color theme, allowing users to select their preferred portrait style and create an order. Below are key details about this project:
 
@@ -42,7 +42,7 @@ Art-of-canvas is a simple landing page with a light color theme, allowing users 
 
 ### 5. Salon
 
-![Salon Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273237/salon_1_lwxdvf.jpg)
+![Salon Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341572/salon-mockup-resized-min_tmhmma.jpg)
 
 Salon is a web beauty salon page that provides beauty salon services, portfolio works, and expert information. Explore the project details below:
 
@@ -51,7 +51,7 @@ Salon is a web beauty salon page that provides beauty salon services, portfolio 
 
 ### 6. Investing
 
-![Investing Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273237/investing_1_k8xsdy.jpg)
+![Investing Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341571/inv-mockup-resized-min_aneteb.jpg)
 
 Investing is a mobile application landing page designed to simplify the investing process. It utilizes Bootstrap and provides a live demo for easy exploration:
 
@@ -69,7 +69,7 @@ Pulse is a project that provides heart rate monitor services with a catalog, con
 
 ### 8. Portfolio-template
 
-![Portfolio-template Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273237/portfolio_1_tx8tka.jpg)
+![Portfolio-template Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701341571/portfolio-mockup-resized-min_xnxfxf.jpg)
 
 Portfolio-template is a project with a light and dark color themes that offers a portfolio template with sections for about, works, and skills. Explore the source code below:
 
