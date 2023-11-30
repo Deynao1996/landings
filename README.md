@@ -60,7 +60,7 @@ Investing is a mobile application landing page designed to simplify the investin
 
 ### 7. Pulse
 
-![Pulse Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273237/pulse_1_qlrflp.jpg)
+![Pulse Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701343941/pulse-resized-min_e73g1m.jpg)
 
 Pulse is a project that provides heart rate monitor services with a catalog, contacts, and advantages. Here are the details for this project:
 
@@ -78,7 +78,7 @@ Portfolio-template is a project with a light and dark color themes that offers a
 
 ### 9. Prengi
 
-![Prengi Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273597/prengi_1_ovkgpz.jpg)
+![Prengi Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701343941/prengi-resized-min_gq6xj0.jpg)
 
 Prengi is a project that provides a new business management web application. You can explore the source code below:
 
@@ -86,7 +86,7 @@ Prengi is a project that provides a new business management web application. You
 
 ### 10. Homepage
 
-![Homepage Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1695273237/homepage_1_zypsdk.jpg)
+![Homepage Preview](https://res.cloudinary.com/dkl9cqqui/image/upload/v1701343941/home-resized-min_ahdhfv.jpg)
 
 Homepage is a landing page that showcases a new mobile application in a light mode, highlighting its features and advantages. Although there is no live demo available for this project, you can explore the source code here:
 
